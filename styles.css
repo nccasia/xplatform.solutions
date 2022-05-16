@@ -22066,6 +22066,9 @@ h3 {
     color: #000;
     font-family: Rubik, sans-serif;
     font-weight: 500;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
   }
   
   .active_s, .accordion_s:hover {
@@ -22374,7 +22377,7 @@ dl, ol, ul {
 }
 
 .colored {
-    color: blue;
+    color: white;
 }
 
 .svg-inline--fa {
@@ -22396,7 +22399,7 @@ dl, ol, ul {
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 .btn_s:not(:disabled):not(.disabled) {
@@ -22531,3 +22534,39 @@ dl, ol, ul {
   	overflow: hidden;
   	text-overflow: ellipsis;
 }
+
+@media (max-width: 911px){
+    .textcollapse {
+        -webkit-line-clamp: 2;  /* số dòng hiển thị */
+        
+    }
+}
+
+@media (max-width: 806px){
+    .textcollapse {
+        -webkit-line-clamp: 1;  /* số dòng hiển thị */
+        
+    }
+}
+
+
+@media (max-width: 768px){
+    #readmore {
+        width: auto;
+    }
+}
+
+@media (max-width: 738px){
+    #readmore {
+       display: none;
+    }
+}
+
+
+
+/* @media (min-width: 992px){
+    .textcollapse {
+        display: none;
+        
+    }
+} */
