@@ -92,3 +92,20 @@ $("a[href^='#']").click(function (e) {
     } /* speed */
   );
 });
+
+function OnSub() {
+  var mailForm = document.getElementById("mce-EMAIL");
+
+  if (mailForm.value.length == 0) {
+    console.log("fds");
+  } else {
+    console.log("fdsfsd");
+
+    document.getElementById("loadding-svg").style.display = "block";
+    document.getElementById("mce-responses").style.display = "none";
+    setTimeout(function () {
+      document.getElementById("loadding-svg").style.display = "none";
+      document.getElementById("mce-responses").style.display = "block";
+    }, 2000);
+  }
+}
