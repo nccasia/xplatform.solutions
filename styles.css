@@ -22051,6 +22051,8 @@ h3 {
   /*more*/
   .more {display: none;}
 
+ 
+
   /*block cuối*/
   .accordion_s {
     background-color: #eee;
@@ -22069,6 +22071,7 @@ h3 {
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   
   .active_s, .accordion_s:hover {
@@ -22082,27 +22085,17 @@ h3 {
     color: white;
     overflow: hidden;
     position: relative;
+    background-image: url(/assets/images/insight.jfif);
+    /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("./assets/images/insight.jfif"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6 ;
   }
 
   .box-block_insight {
     margin-top: 2.5rem;
     padding-bottom: .3125rem;
-  }
-
-  /* #a {
-   display: block;
-  } */
-
-  .demo-bg {
-    opacity: 0.5;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.6;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
   }
   
   #popup-modal.active{
@@ -22112,7 +22105,7 @@ h3 {
 }
 
   .textbox{
-      position: relative;
+      color: white;
   }
 
 
@@ -22561,12 +22554,3 @@ dl, ol, ul {
        display: none;
     }
 }
-
-
-
-/* @media (min-width: 992px){
-    .textcollapse {
-        display: none;
-        
-    }
-} */
