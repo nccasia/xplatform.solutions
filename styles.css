@@ -22123,8 +22123,21 @@ h3 {
   #popup-modal.active{
     display: block;
     /* opacity: 0.5; */
-
 }
+
+
+@media (max-width:1023px) {
+    #popup-modal.active{
+     display: none;
+ }
+ }
+
+
+ @media (max-width:1023px) {
+    body{
+     overflow: visible;
+ }
+ }
 
   .textbox{
       color: white;
@@ -22191,6 +22204,12 @@ h3 {
 
 #popup-overlay.active {
     display: block;
+}
+
+@media (max-width:1023px) {
+   #popup-overlay.active {
+    display: none;
+}
 }
 
 
