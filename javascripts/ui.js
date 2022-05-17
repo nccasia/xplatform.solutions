@@ -44,3 +44,51 @@ function PopupUI() {
 }
 
 PopupUI();
+
+function onLinkClick() {
+  document.getElementById("contactus").scrollIntoView();
+  // will scroll to 4th h3 element
+}
+
+function myFunction(id, dotId, moreTextId) {
+  var btnText = document.getElementById(id);
+  var dots = document.getElementById(dotId);
+  var moreText = document.getElementById(moreTextId);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+var acc = document.getElementsByClassName("accordion_s");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active_s");
+    var panel_s = this.nextElementSibling;
+    if (panel_s.style.display === "block") {
+      panel_s.style.display = "none";
+    } else {
+      panel_s.style.display = "block";
+    }
+  });
+}
+
+$("a[href^='#']").click(function (e) {
+  e.preventDefault();
+
+  var position = $($(this).attr("href")).offset().top - 110;
+
+  $("body, html").animate(
+    {
+      scrollTop: position,
+    } /* speed */
+  );
+});
