@@ -6,6 +6,10 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     margin: 0
 }
@@ -22051,6 +22055,8 @@ h3 {
   /*more*/
   .more {display: none;}
 
+ 
+
   /*block cuối*/
   .accordion_s {
     background-color: #eee;
@@ -22069,6 +22075,7 @@ h3 {
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   
   .active_s, .accordion_s:hover {
@@ -22082,37 +22089,58 @@ h3 {
     color: white;
     overflow: hidden;
     position: relative;
+
   }
+
+  .panel_s .textboxt{
+    position: absolute;
+    z-index:999;
+    text-align: center;
+    width: 100%;
+  }
+
+  .panel_s::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index:-99;
+    background-image: url(./assets/images/insight.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+
 
   .box-block_insight {
     margin-top: 2.5rem;
     padding-bottom: .3125rem;
   }
-
-  /* #a {
-   display: block;
-  } */
-
-  .demo-bg {
-    opacity: 0.5;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.6;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-  }
   
   #popup-modal.active{
     display: block;
     /* opacity: 0.5; */
-
 }
 
+
+@media (max-width:1023px) {
+    #popup-modal.active{
+     display: none;
+ }
+ }
+
+
+ @media (max-width:1023px) {
+    body{
+     overflow: visible;
+ }
+ }
+
   .textbox{
-      position: relative;
+      color: white;
   }
 
 
@@ -22176,6 +22204,12 @@ h3 {
 
 #popup-overlay.active {
     display: block;
+}
+
+@media (max-width:1023px) {
+   #popup-overlay.active {
+    display: none;
+}
 }
 
 
@@ -22396,6 +22430,8 @@ dl, ol, ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
+    /* margin-right: 30px; */
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
@@ -22425,7 +22461,7 @@ dl, ol, ul {
 }
 
 #loading-send {
-    display: none;
+    display: block;
 }
 
 @media (min-width: 576px){
@@ -22562,11 +22598,9 @@ dl, ol, ul {
     }
 }
 
-
-
-/* @media (min-width: 992px){
-    .textcollapse {
-        display: none;
-        
-    }
-} */
+.boxsubmit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+}
