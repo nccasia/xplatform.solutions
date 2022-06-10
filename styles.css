@@ -5282,6 +5282,9 @@ h3 { font-family: Vollkorn, serif; font-size: 1.875rem; font-weight: 600; line-h
 @media (min-width: 80em) {
   .sticky-navigation__jump-links ul { -webkit-box-align: center; align-items: center; padding: 0px; display: flex !important; height: auto !important;  margin-left: 25px; }
 }
+@media (max-width: 1280px) {
+  .sticky-navigation__jump-links ul {  margin-left: 0; }
+}
 .sticky-navigation__jump-links li { border-top: 0.0625rem solid rgba(167, 169, 169, 0.2); }
 @media (min-width: 80em) {
   .sticky-navigation__jump-links li { border: 0px; }
@@ -5376,12 +5379,12 @@ h3 { font-family: Vollkorn, serif; font-size: 1.875rem; font-weight: 600; line-h
 .more { display: none; }
 .accordion_s { background-color: rgb(238, 238, 238); cursor: pointer; padding: 18px; width: 100%; border-top: none; border-right: none; border-left: none; border-image: initial; text-align: left; outline: none; font-size: 29px; transition: all 0.4s ease 0s; color: rgb(0, 0, 0); font-family: Rubik, sans-serif; font-weight: 500; border-bottom: 1px solid black; display: flex; justify-content: space-between; align-items: center; }
 .active_s, .accordion_s:hover { background-color: rgb(204, 204, 204); }
-.panel_s { padding: 60px 30px; display: none; overflow: hidden; color: white; position: relative; }
+.panel_s { padding: 40px 30px; display: none; overflow: hidden; color: white; position: relative; }
 .active {
   display: block;
 }
 .panel_s .textboxt { position: absolute; z-index: 999; text-align: center; width: 100%; }
-.panel_s::after { content: ""; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -99; background-image: url("./assets/images/insight.jfif"); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 0.5; }
+.panel_s::after { content: ""; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -99; background-image: url("./assets/images/_Enterprise_Resource_Planning_Insight.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 0.5; }
 .box-block_insight { margin-top: 2.5rem; padding-bottom: 0.3125rem; }
 #popup-modal.active { display: block; overflow-x: hidden; }
 #popup-modal.active::-webkit-scrollbar { 
@@ -5442,7 +5445,7 @@ dl, ol, ul { margin-top: 0px; margin-bottom: 1rem; }
 .button-send { display: flex; align-items: center; justify-content: right; }
 .btn_s:not(:disabled):not(.disabled) { cursor: pointer; }
 .btn_s { display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; }
-#loading-send { display: block; }
+/* #loading-send { display: block; } */
 @media (min-width: 576px) {
   .container_s { max-width: 540px; }
 }
@@ -5790,7 +5793,7 @@ dl, ol, ul { margin-top: 0px; margin-bottom: 1rem; }
   }
 }
 
-.button-brand { background-image: linear-gradient(107deg, rgb(0, 123, 194), rgb(0, 73, 169), rgb(0, 123, 194)); background-size: 200% 200%; border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); transition: background-position 0.3s ease-in-out 0s; }
+.button-brand { display: flex; align-items: center; justify-content: center; background-image: linear-gradient(107deg, rgb(0, 123, 194), rgb(0, 73, 169), rgb(0, 123, 194)); background-size: 200% 200%; border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); transition: background-position 0.3s ease-in-out 0s; }
 @media (hover: hover) and (pointer: fine) {
   .button-brand:hover { background-position: 100% 100%; }
 }
@@ -5843,3 +5846,4 @@ dl, ol, ul { margin-top: 0px; margin-bottom: 1rem; }
   display: flex !important;
   align-items: center;
 }
+
