@@ -67,21 +67,6 @@ function myFunction(id, dotId, moreTextId) {
     }
 }
 
-// var acc = document.getElementsByClassName("accordion_s");
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function () {
-//     this.classList.toggle("active_s");
-//     var panel_s = this.nextElementSibling;
-//     if (panel_s.style.display === "block") {
-//       panel_s.style.display = "none";
-//     } else {
-//       panel_s.style.display = "block";
-//     }
-//   });
-// }
-
 const btnAccordion = document.querySelectorAll(".accordion_s");
 const showAccordion = document.querySelectorAll(".panel_s");
 function toggleAccordion() {
@@ -107,74 +92,6 @@ $("a[href^='#']").click(function (e) {
     } /* speed */
   );
 });
-
-// function OnSub() {
-//   var mailForm = document.getElementById("mce-EMAIL");
-
-//   if (mailForm.value.length == 0) {
-//   } else {
-//     document.getElementById("loadding-svg").style.display = "block";
-//     document.getElementById("mce-responses").style.display = "none";
-//     setTimeout(function () {
-//       document.getElementById("loadding-svg").style.display = "none";
-//       document.getElementById("mce-responses").style.display = "block";
-//     }, 2000);
-//   }
-// }
-
-// var modal = document.querySelector(".modalerp");
-// var trigger = document.querySelector(".btn.btn--primary.btnmore");
-// var closeButton = document.querySelector(".close-buttonerp");
-
-// function toggleModal() {
-//   modal.classList.toggle("show-modalerp");
-//   // document.body.style.overflow = "hidden";
-// }
-
-// function windowOnClick(event) {
-//   if (event.target === modal) {
-//     toggleModal();
-//   }
-// }
-
-// trigger.addEventListener("click", toggleModal);
-// closeButton.addEventListener("click", toggleModal);
-// window.addEventListener("click", windowOnClick);
-
-// contentsuite
-// const contentsuiteParaEle = document.querySelectorAll(".contentsuite-para");
-// const contentsuiteParaContents = [];
-
-// contentsuiteParaEle.forEach((item, index) => {
-//   contentsuiteParaContents.push({
-//     id: "contentsuite-para-" + (index + 1),
-//     content: item.innerHTML,
-//     expand: true,
-//   });
-//   collapseContentPara(item);
-// });
-
-// function collapseContentPara(item) {
-//   if (item.innerHTML.length > 100) {
-//     item.innerHTML = item.innerHTML.substring(0, 100) + " ...";
-//   }
-// }
-
-// function expandContent(event) {
-//   const parentElement = event.target.parentElement.parentElement;
-//   const curentParaElement = parentElement.querySelector(".contentsuite-para");
-//   const content = contentsuiteParaContents.find(
-//     (item) => item.id == curentParaElement.id
-//   );
-
-//   if (content.expand) {
-//     curentParaElement.innerHTML = content.content;
-//     content.expand = false;
-//   } else {
-//     content.expand = true;
-//     collapseContentPara(curentParaElement);
-//   }
-// }
 
 function validateContactForm() {
   const formContactEle = document.querySelector("#contact-form");
@@ -275,30 +192,3 @@ showSolutionSuite();
     });
   });
 })();
-
-// function topFunction() {
-//   const element = document.querySelector(".list-button-brand");
-//   console.log(element.scrollTop, element.clientHeight, element.scrollHeight);
-//   element.scrollTo({ top: 453, behavior: "smooth" });
-//   // element.scrollIntoView({ behavior: "smooth" });
-// }
-
-// $("a[href^='#']").click(function (e) {
-//   e.preventDefault();
-
-//   var position = $($(this).attr("href")).offset().top - 110;
-
-//   $("body, html").animate(
-//     {
-//       scrollTop: position,
-//     } /* speed */
-//   );
-// });
-
-// (function loadDubmit() {
-//   const btnClick = document.querySelector(".myButtonSend");
-//   btnClick.addEventListener("click",()=>{
-//     const load = document.querySelector("#loading-send");
-//     load.classList.add("active");
-//   })
-// })()
