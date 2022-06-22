@@ -1,573 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="twitter:description" content="Xplatform is a business solution company which provide flexible and effective monitoring system for organizations and enterprises. We offer all tools and integrations needed for to maximize your business capabilities and productivities.">
-    <meta name="twitter:title" content="Business Solution Company | XPlatform">
-    <meta name="geo.country" content="VN">
-    <meta name="author" content="NCC Vietnam">
-    <meta name="geo.region" content="VN-Hanoi">
-    <meta name="copyright" content="Copyright (c) 2018 by NCC Vietnam">
-    <meta property="og:image" content="assets/images/logo.png">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="Business Solution Company | XPlatform">
-    <meta property="og:image" content="assets/images/XPlatform_meta.jpg">
-    <meta property="og:site_name" content="xplatform-solutions.web.app">
-    <meta property="og:description" content="Xplatform is a business solution company which provide flexible and effective monitoring system for organizations and enterprises. We offer all tools and integrations needed for to maximize your business capabilities and productivities.">
-    <meta property="og:url" content="index.html">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="assets/icon/favicon.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Oxygen&family=Roboto:ital,wght@0,400;1,300&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Oxygen&family=Roboto:ital,wght@0,400;1,300&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <title>Business Solution Company | XPlatform</title>
-  </head>
-  <body>
-    <div style="display: none">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-        <symbol id="arrow-left">
-          <path
-            d="M30 13.413H6.015l4.909-4.91-2.221-2.222L0 14.984l8.703 8.703 2.221-2.222-4.909-4.91H30z"
-          ></path>
-        </symbol>
-        <symbol id="arrow-right">
-          <path
-            d="M0 16.555h23.985l-4.909 4.91 2.221 2.222L30 14.984l-8.703-8.703-2.221 2.222 4.909 4.91H0z"
-          ></path>
-        </symbol>
-        <symbol id="blog-social-icon">
-          <path
-            d="M2.143 7.955c1.183 0 2.142.96 2.142 2.143v12.385c0 1.707 1.389 3.095 3.096 3.095s3.096-1.388 3.096-3.095a3.093 3.093 0 00-1.69-2.76 2.144 2.144 0 011.956-3.815 7.362 7.362 0 014.019 6.574c0 4.07-3.31 7.38-7.381 7.38-4.07 0-7.381-3.31-7.381-7.38V10.098c0-1.183.959-2.143 2.143-2.143zm8.015-.216c7.082 1.327 12.223 7.528 12.223 14.743a2.144 2.144 0 11-4.286 0c0-5.153-3.67-9.584-8.726-10.531a2.144 2.144 0 11.789-4.212zm-.15-7.725C21.406 1.334 30 10.994 30 22.482a2.143 2.143 0 11-4.286 0c0-9.312-6.964-17.141-16.199-18.21a2.143 2.143 0 11.494-4.258z"
-          ></path>
-        </symbol>
-        <symbol id="chevron-left">
-          <path
-            d="M.661 5.55L4.492 10l1.296-1.099L2.43 5l3.358-3.901L4.492 0 .661 4.45.189 5z"
-          ></path>
-        </symbol>
-        <symbol id="chevron-right">
-          <path
-            d="M5.31 4.44L1.46 0 .17 1.11 3.55 5 .21 8.91 1.51 10l3.81-4.46.47-.54z"
-          ></path>
-        </symbol>
-        <symbol id="close-icon-alert">
-          <path
-            d="M.953 7.711l3.036-3.036 2.937 2.937.671-.672L4.66 4.004 7.711.953 7.033.274l-3.05 3.051L1.06.403l-.672.67 2.923 2.923L.274 7.033z"
-          ></path>
-        </symbol>
-        <symbol id="close-icon">
-          <path
-            d="M3.154 2.499A.652.652 0 002.7 3.617l6.379 6.38-6.38 6.38a.65.65 0 10.922.922L10 10.919l6.38 6.38a.653.653 0 10.92-.921l-6.379-6.38 6.38-6.38a.653.653 0 00-.474-1.119.652.652 0 00-.448.197L10 9.076l-6.38-6.38a.648.648 0 00-.466-.197z"
-          ></path>
-        </symbol>
-        <symbol id="down-arrow">
-          <path
-            d="M5.537 5.328l4.45-3.831L8.889.2l-3.9 3.359L1.086.2l-1.1 1.297 4.45 3.83.55.473z"
-          ></path>
-        </symbol>
-        <symbol id="download-icon" viewBox="0 0 320 321">
-          <path
-            d="M320 279v42H0v-42h320zM180.95.829v169.798l65.458-65.458 29.628 29.624L160 250.829 43.964 134.793l29.628-29.624 65.458 65.458V.829h41.9z"
-          ></path>
-        </symbol>
-        <symbol id="email-social-icon">
-          <path
-            d="M15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0zm7 10.397l-7 6.255-7-6.255v9.029l.007.095c.047.31.32.554.642.554h12.702l.095-.007a.656.656 0 00.554-.642v-9.029zm-.708-.472H8.767L15 15.649l6.292-5.724z"
-          ></path>
-        </symbol>
-        <symbol id="external-link-icon" viewBox="0 0 16 16">
-          <path
-            d="M6.097 0a.37.37 0 01.359.38v1.518a.368.368 0 01-.359.38h-3.83v10.461h10.455V8.907a.372.372 0 01.115-.258.372.372 0 01.265-.1h1.518c.2 0 .363.159.369.358v5.748a.346.346 0 01-.097.239l-.012.011-.052.04a.35.35 0 01-.189.055H.36a.342.342 0 01-.24-.099H.11L.1 14.89a.34.34 0 01-.1-.24V.36C0 .27.036.184.099.12l.01-.01.01-.01A.343.343 0 01.36 0zm8.521.008a.382.382 0 01.382.38v5.786c0 .21-.17.38-.38.38h-1.518a.38.38 0 01-.38-.38V3.897L7.781 8.66a.38.38 0 01-.533 0L6.175 7.586a.379.379 0 010-.54l4.935-4.76H8.745a.38.38 0 01-.38-.38V.387c0-.21.17-.38.38-.38z"
-          ></path>
-        </symbol>
-        <symbol id="facebook-social-icon">
-          <path
-            d="M30 15c0-8.284-6.716-15-15-15C6.716 0 0 6.716 0 15c0 7.487 5.485 13.692 12.656 14.818V19.336H8.848V15h3.808v-3.305c0-3.76 2.24-5.836 5.666-5.836 1.641 0 3.358.293 3.358.293v3.692h-1.892c-1.863 0-2.444 1.156-2.444 2.342V15h4.16l-.665 4.336h-3.495v10.482C24.514 28.692 30 22.487 30 15"
-          ></path>
-        </symbol>
-        <symbol id="fax-icon">
-          <path
-            d="M38.62 82.759v49.655h242.76V82.759h10.642c15.388 0 27.978 12.59 27.978 27.978v109.56c0 15.389-12.59 27.979-27.983 27.979H27.977C12.59 248.276 0 235.686 0 220.298V110.737c0-15.388 12.59-27.978 27.978-27.978zm0 113.103c-7.619 0-13.792 6.18-13.792 13.793 0 7.614 6.173 13.793 13.793 13.793 7.619 0 13.793-6.179 13.793-13.793 0-7.614-6.174-13.793-13.793-13.793zM253.794 0v104.828H66.207V0z"
-          ></path>
-        </symbol>
-        <symbol id="link-icon">
-          <path
-            d="M2.578 10.527l5.828-5.828V8.17h1.57l.001-6.153H3.823v1.57h3.472l-5.828 5.83z"
-          ></path>
-        </symbol>
-        <symbol id="linkedin-social-icon">
-          <path
-            d="M15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0zm4.278 11.661c-1.62 0-2.707.889-3.152 1.731h-.045v-1.465h-3.193v10.717h3.327v-5.3c0-1.398.264-2.753 1.997-2.753 1.71 0 1.73 1.598 1.73 2.842v5.21h3.331v-5.877c0-2.886-.623-5.105-3.995-5.105zm-8.48.266H7.465v10.717H10.8V11.927zM9.133 6.6a1.93 1.93 0 10-.005 3.865A1.93 1.93 0 009.134 6.6z"
-          ></path>
-        </symbol>
-        <symbol id="linkedin-square-icon">
-          <path
-            d="M17.043 17.043h-2.966V12.4c0-1.107-.019-2.53-1.541-2.53-1.544 0-1.779 1.206-1.779 2.451v4.72H7.794V7.499h2.844v1.305h.04c.396-.75 1.363-1.542 2.807-1.542 3.003 0 3.558 1.976 3.558 4.547v5.235zM4.45 6.194a1.719 1.719 0 110-3.44 1.72 1.72 0 010 3.44zM2.963 17.043h2.97V7.498h-2.97v9.545zM18.521 0H1.476C.662 0 0 .646 0 1.442v17.116C0 19.354.662 20 1.476 20H18.52c.815 0 1.479-.647 1.479-1.443V1.442C20 .646 19.336 0 18.52 0z"
-            fill-rule="evenodd"
-          ></path>
-        </symbol>
-        <symbol id="minus-icon">
-          <path
-            d="M6.892 6.795h4.595A.497.497 0 0012 6.283v-.714a.497.497 0 00-.513-.513H.513A.497.497 0 000 5.569v.714a.497.497 0 00.513.513h4.573z"
-          ></path>
-        </symbol>
-        <symbol id="pagination-arrow-bg">
-          <path
-            d="M43 35.327a3.352 3.352 0 01-1.655 2.895L23.664 48.55a3.296 3.296 0 01-3.328 0L2.656 38.222A3.352 3.352 0 011 35.327V14.673c0-1.195.633-2.298 1.655-2.895L20.336 1.45a3.296 3.296 0 013.328 0l17.68 10.327A3.352 3.352 0 0143 14.673z"
-          ></path>
-        </symbol>
-        <symbol id="pagination-arrow">
-          <path
-            d="M26.241 24.23L20.878 18l-1.815 1.54L23.764 25l-4.702 5.46L20.878 32l5.363-6.23.662-.77z"
-          ></path>
-        </symbol>
-        <symbol id="pause-icon">
-          <path d="M3.75 12h-1.5V0h1.5v12zm6 0h-1.5V0h1.5v12z"></path>
-        </symbol>
-        <symbol id="play-icon"><path d="M.563 10V0l8.875 5z"></path></symbol>
-        <symbol id="plus-icon">
-          <path
-            d="M6.38 11.948a.497.497 0 00.512-.513v-4.64h4.595A.497.497 0 0012 6.283v-.714a.497.497 0 00-.513-.513H6.892V.551a.498.498 0 00-.145-.369.5.5 0 00-.368-.144H5.6a.501.501 0 00-.369.144.503.503 0 00-.144.369v4.505H.513A.497.497 0 000 5.569v.714a.497.497 0 00.513.513h4.573v4.64a.5.5 0 00.144.367.5.5 0 00.369.145h.78z"
-          ></path>
-        </symbol>
-        <symbol id="podcasts-social-icon">
-          <path
-            d="M14 9.6c1.985 0 3.6 1.615 3.6 3.6 0 1.53-.958 2.839-2.306 3.36a5.359 5.359 0 014.015 5.962l-.627 4.387A3.617 3.617 0 0115.118 30h-2.236a3.617 3.617 0 01-3.564-3.09l-.627-4.389a5.36 5.36 0 014.015-5.962A3.604 3.604 0 0110.4 13.2c0-1.985 1.615-3.6 3.6-3.6zM14 0c7.72 0 14 6.28 14 14 0 5.406-3.08 10.105-7.577 12.437l.442-3.093A11.588 11.588 0 0025.6 14c0-6.396-5.204-11.6-11.6-11.6S2.4 7.604 2.4 14c0 3.83 1.866 7.23 4.735 9.344l.442 3.093C3.08 24.105 0 19.406 0 14 0 6.28 6.28 0 14 0zm0 4.8c5.073 0 9.2 4.127 9.2 9.2a9.165 9.165 0 01-2.494 6.291 6.947 6.947 0 00-1.17-2.35A6.758 6.758 0 0020.8 14c0-3.75-3.05-6.8-6.8-6.8S7.2 10.25 7.2 14a6.76 6.76 0 001.264 3.94 6.961 6.961 0 00-1.17 2.351A9.165 9.165 0 014.8 14c0-5.073 4.127-9.2 9.2-9.2z"
-          ></path>
-        </symbol>
-        <symbol id="quick-contacts-email">
-          <path
-            d="M10 1.712v6.45c0 .252-.21.463-.464.463H.464A.467.467 0 010 8.161V1.712L5 6.18l5-4.468zm-.506-.337L5 5.464.548 1.375h8.946z"
-          ></path>
-        </symbol>
-        <symbol id="quick-contacts-phone">
-          <path
-            d="M10 7.917L8.75 10A8.75 8.75 0 010 1.25L2.083 0 3.75 3.333l-.833.834a2.914 2.914 0 002.916 2.916l.834-.833L10 7.917z"
-          ></path>
-        </symbol>
-        <symbol id="search-icon">
-          <path
-            d="M10.686 0a10.24 10.24 0 017.834 16.841l6.086 6.31L22.803 25l-6.185-6.392A10.242 10.242 0 1110.686 0zm0 2.362a7.88 7.88 0 100 15.76 7.88 7.88 0 000-15.76z"
-          ></path>
-        </symbol>
-        <symbol id="shape">
-          <path
-            d="M155.868 275C235.388 275 251 166.87 251 87.383 251 7.895 186.537 0 107.017 0 27.497 0-13.826 74.533 4.172 146.495 22.17 218.458 76.35 275 155.868 275z"
-            fill="#CBC8C7"
-            fill-rule="evenodd"
-            opacity=".05"
-          ></path>
-        </symbol>
-        <symbol id="twitter-social-icon">
-          <path
-            d="M15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0zm3.915 8.588a3.617 3.617 0 00-3.522 4.44A10.263 10.263 0 017.939 9.25a3.614 3.614 0 001.12 4.828 3.604 3.604 0 01-1.638-.453l-.001.046a3.617 3.617 0 002.901 3.545 3.61 3.61 0 01-1.633.062 3.619 3.619 0 003.378 2.512 7.255 7.255 0 01-4.49 1.548c-.293 0-.58-.017-.863-.05 1.6 1.025 3.5 1.624 5.542 1.624 6.652 0 10.289-5.51 10.289-10.288 0-.157-.003-.313-.01-.468a7.327 7.327 0 001.803-1.872 7.197 7.197 0 01-2.076.569 3.631 3.631 0 001.59-2 7.252 7.252 0 01-2.296.877 3.616 3.616 0 00-2.64-1.142z"
-          ></path>
-        </symbol>
-        <symbol id="twitter">
-          <path
-            d="M6.29 16.651c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.354-.012-.53A8.351 8.351 0 0020 2.322a8.21 8.21 0 01-2.357.645 4.117 4.117 0 001.804-2.27 8.212 8.212 0 01-2.605.997 4.107 4.107 0 00-6.993 3.742 11.65 11.65 0 01-8.457-4.287 4.105 4.105 0 001.27 5.477A4.072 4.072 0 01.8 6.113v.052a4.104 4.104 0 003.292 4.022 4.086 4.086 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.22 8.22 0 010 14.808a11.62 11.62 0 006.29 1.84"
-          ></path>
-        </symbol>
-        <symbol id="up-arrow">
-          <path
-            d="M4.438.672l-4.45 3.831L1.087 5.8l3.9-3.359L8.889 5.8l1.1-1.297-4.45-3.83L4.987.2z"
-          ></path>
-        </symbol>
-        <symbol id="vimeo-social-icon">
-          <path
-            d="M15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0zm5.951 7.803c-2.328-.075-3.906 1.24-4.731 3.95.426-.183.84-.275 1.243-.275.855 0 1.232.481 1.131 1.442-.05.581-.427 1.428-1.13 2.541-.705 1.113-1.233 1.67-1.585 1.67-.453 0-.868-.857-1.245-2.573-.127-.503-.352-1.79-.679-3.858-.302-1.917-1.107-2.812-2.414-2.686-.553.05-1.383.554-2.49 1.512-.804.73-1.622 1.46-2.451 2.19l.79 1.02c.753-.527 1.193-.792 1.319-.792.576 0 1.115.906 1.618 2.717l1.356 4.982c.677 1.812 1.506 2.717 2.485 2.717 1.581 0 3.514-1.487 5.797-4.462 2.21-2.847 3.352-5.091 3.427-6.73.1-2.192-.714-3.314-2.44-3.365z"
-          ></path>
-        </symbol>
-        <symbol id="weibo-social-icon">
-          <path
-            d="M14.71 7.665c1.799-.118 5.61-2.092 7.295-.165.743.85.459 2.372 0 3.547.21.112.423.22.637.324l.322.155.161.078.32.155c1.637.807 3.075 1.727 2.752 4.317-.767 6.162-13.817 10.3-21.968 5.773-2.235-1.243-4.549-3.06-4.192-6.68.307-3.116 2.437-5.53 4.528-7.586C6.56 5.62 8.663 4.085 11.524 3.378c3.105-.768 4.022 1.777 3.186 4.287zm-8.385 4.372c-5.933 3.424-3.429 9.58 3.858 10.06 3.86.254 7.723-1.086 9.558-3.134.672-.748 1.345-1.888 1.342-3.215-.013-5.494-9.544-6.72-14.758-3.711zm9.728 3.298c1.786 5.31-7.522 7.779-9.224 3.216-1.139-3.05 1.596-5.478 4.444-5.772 2.43-.251 4.243.969 4.78 2.556zm-6.374.99c-1.984.455-1.6 3.233.587 2.721 1.565-.366 1.775-3.265-.587-2.72zm2.096-.082c.379.645 1.25.181 1.174-.33-.091-.592-1.181-.504-1.174.33zm18.196-9.154c.129 1.644-.154 3.614-1.257 3.711-1.803.159-.863-1.793-.839-2.968.066-3.407-2.89-5.773-5.786-5.773-.82 0-2.726.548-2.433-1.155.133-.75.779-.74 1.425-.825 4.871-.637 8.548 2.656 8.89 7.01zM24.94 9.48c-1.221.08-.765-.822-.839-1.896-.046-.661-.603-1.425-1.09-1.65-.33-.152-.723-.16-1.095-.161h-.245c-.6-.006-1.091-.073-1.091-.828 0-.972.858-.87 1.343-.907 4.443-.333 4.718 5.331 3.017 5.442z"
-          ></path>
-        </symbol>
-        <symbol id="youtube-social-icon">
-          <path
-            d="M15.91 20.638V8.743l10.454 5.948-10.455 5.947zM39.164 5.001a5.025 5.025 0 00-3.536-3.56C32.508.6 20 .6 20 .6S7.492.6 4.372 1.441a5.027 5.027 0 00-3.536 3.56C0 8.14 0 14.69 0 14.69s0 6.55.836 9.69a5.028 5.028 0 003.536 3.56c3.12.84 15.628.84 15.628.84s12.508 0 15.628-.84a5.03 5.03 0 003.536-3.56C40 21.24 40 14.69 40 14.69s0-6.55-.836-9.69z"
-          ></path>
-        </symbol>
-      </svg>
-    </div>
-    <div class="page-container">
-      <header class="header header--has-jumplinks" data-module="header">
-        <div class="header__sticky">
-          <div class="header__sticky__shadow" style="opacity: 0"></div>
-          <div class="header__sticky-inner container">
-            <div class="header__sticky-left">
-              <a href="/" class="header__logo" aria-label="Xplatform Logo">
-                <picture>
-                  <source
-                    srcset="/assets/images/logo_xplatform.png?format=webp"
-                    type="image/webp"
-                    alt="Xplatform Corporation - Home"
-                  />
 
-                  <img
-                    src="/assets/images/logo_xplatform.png"
-                    alt="Xplatform Corporation - Home"
-                    loading="lazy"
-                    width="260"
-                    height="41"
-                  />
-                </picture>
-              </a>
-            </div>
-            <div class="header__sticky-right">
-              <div
-                class="header__sticky-initial"
-                style="transform: translateY(0px); visibility: visible"
-              >
-                <nav class="primary-nav" aria-label="Primary Navigation">
-                  <ul class="primary-nav__bar" role="menubar">
-                    <li
-                      class="primary-nav__main-link"
-                      role="menuitem"
-                      aria-haspopup="true"
-                    >
-                      <span class="primary-nav__label" tabindex="0">
-                        <a  href="#erpSystem" >ERP System</a>
-                      </span>
-                    </li>
-                    <li
-                    class="primary-nav__main-link"
-                    role="menuitem"
-                    aria-haspopup="true"
-                  >
-                    <span class="primary-nav__label" data-module="genericContent" tabindex="0">
-                      <a  href="#ourCompany" >Our Company</a>
-                    </span>
-                  </li>
-                  <li
-                    class="primary-nav__main-link"
-                    role="menuitem"
-                    aria-haspopup="true"
-                  >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="twitter:description"
+    content="Xplatform is a business solution company which provide flexible and effective monitoring system for organizations and enterprises. We offer all tools and integrations needed for to maximize your business capabilities and productivities.">
+  <meta name="twitter:title" content="Business Solution Company | XPlatform">
+  <meta name="geo.country" content="VN">
+  <meta name="author" content="NCC Vietnam">
+  <meta name="geo.region" content="VN-Hanoi">
+  <meta name="copyright" content="Copyright (c) 2018 by NCC Vietnam">
+  <meta property="og:image" content="assets/images/logo.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Business Solution Company | XPlatform">
+  <meta property="og:image" content="assets/images/XPlatform_meta.jpg">
+  <meta property="og:site_name" content="xplatform-solutions.web.app">
+  <meta property="og:description"
+    content="Xplatform is a business solution company which provide flexible and effective monitoring system for organizations and enterprises. We offer all tools and integrations needed for to maximize your business capabilities and productivities.">
+  <meta property="og:url" content="index.html">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Pathway+Gothic+One&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="assets/icon/favicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Oxygen&family=Roboto:ital,wght@0,400;1,300&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Oxygen&family=Roboto:ital,wght@0,400;1,300&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <title>Business Solution Company | XPlatform</title>
+  <link rel="stylesheet" href="dist/css/circular-menu.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/RadialMenu.css">
+  <style>
+
+
+
+    .cn-menu1 {
+      position: absolute;
+      left: 20%;
+      top: 50%;
+    }
+
+    .cn-menu2 {
+      position: absolute;
+      left: 40%;
+      top: 50%;
+    }
+
+    .cn-menu3 {
+      position: absolute;
+      left: 60%;
+      top: 50%;
+    }
+
+    .cn-menu4 {
+      position: absolute;
+      left: 80%;
+      top: 50%;
+    }
+
+    .rect-icon {
+      background: #fff;
+      display: inline-block !important;
+    }
+
+    .circle-icon {
+      background: #f94321;
+      display: inline-block !important;
+      border-radius: 50%;
+    }
+
+    .my-icon {
+      background: url("./images/circular-menu.png");
+    }
+
+    .icon1 {
+      background-position: 0 0;
+    }
+
+    .icon2 {
+      background-position: 0 -56px;
+    }
+
+    .icon3 {
+      background-position: 0 -116px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="arrow-left">
+        <path d="M30 13.413H6.015l4.909-4.91-2.221-2.222L0 14.984l8.703 8.703 2.221-2.222-4.909-4.91H30z"></path>
+      </symbol>
+      <symbol id="arrow-right">
+        <path d="M0 16.555h23.985l-4.909 4.91 2.221 2.222L30 14.984l-8.703-8.703-2.221 2.222 4.909 4.91H0z"></path>
+      </symbol>
+      <symbol id="blog-social-icon">
+        <path
+          d="M2.143 7.955c1.183 0 2.142.96 2.142 2.143v12.385c0 1.707 1.389 3.095 3.096 3.095s3.096-1.388 3.096-3.095a3.093 3.093 0 00-1.69-2.76 2.144 2.144 0 011.956-3.815 7.362 7.362 0 014.019 6.574c0 4.07-3.31 7.38-7.381 7.38-4.07 0-7.381-3.31-7.381-7.38V10.098c0-1.183.959-2.143 2.143-2.143zm8.015-.216c7.082 1.327 12.223 7.528 12.223 14.743a2.144 2.144 0 11-4.286 0c0-5.153-3.67-9.584-8.726-10.531a2.144 2.144 0 11.789-4.212zm-.15-7.725C21.406 1.334 30 10.994 30 22.482a2.143 2.143 0 11-4.286 0c0-9.312-6.964-17.141-16.199-18.21a2.143 2.143 0 11.494-4.258z">
+        </path>
+      </symbol>
+      <symbol id="chevron-left">
+        <path d="M.661 5.55L4.492 10l1.296-1.099L2.43 5l3.358-3.901L4.492 0 .661 4.45.189 5z"></path>
+      </symbol>
+      <symbol id="chevron-right">
+        <path d="M5.31 4.44L1.46 0 .17 1.11 3.55 5 .21 8.91 1.51 10l3.81-4.46.47-.54z"></path>
+      </symbol>
+      <symbol id="close-icon-alert">
+        <path
+          d="M.953 7.711l3.036-3.036 2.937 2.937.671-.672L4.66 4.004 7.711.953 7.033.274l-3.05 3.051L1.06.403l-.672.67 2.923 2.923L.274 7.033z">
+        </path>
+      </symbol>
+      <symbol id="close-icon">
+        <path
+          d="M3.154 2.499A.652.652 0 002.7 3.617l6.379 6.38-6.38 6.38a.65.65 0 10.922.922L10 10.919l6.38 6.38a.653.653 0 10.92-.921l-6.379-6.38 6.38-6.38a.653.653 0 00-.474-1.119.652.652 0 00-.448.197L10 9.076l-6.38-6.38a.648.648 0 00-.466-.197z">
+        </path>
+      </symbol>
+      <symbol id="down-arrow">
+        <path d="M5.537 5.328l4.45-3.831L8.889.2l-3.9 3.359L1.086.2l-1.1 1.297 4.45 3.83.55.473z"></path>
+      </symbol>
+      <symbol id="download-icon" viewBox="0 0 320 321">
+        <path
+          d="M320 279v42H0v-42h320zM180.95.829v169.798l65.458-65.458 29.628 29.624L160 250.829 43.964 134.793l29.628-29.624 65.458 65.458V.829h41.9z">
+        </path>
+      </symbol>
+      <symbol id="email-social-icon">
+        <path
+          d="M15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0zm7 10.397l-7 6.255-7-6.255v9.029l.007.095c.047.31.32.554.642.554h12.702l.095-.007a.656.656 0 00.554-.642v-9.029zm-.708-.472H8.767L15 15.649l6.292-5.724z">
+        </path>
+      </symbol>
+      <symbol id="external-link-icon" viewBox="0 0 16 16">
+        <path
+          d="M6.097 0a.37.37 0 01.359.38v1.518a.368.368 0 01-.359.38h-3.83v10.461h10.455V8.907a.372.372 0 01.115-.258.372.372 0 01.265-.1h1.518c.2 0 .363.159.369.358v5.748a.346.346 0 01-.097.239l-.012.011-.052.04a.35.35 0 01-.189.055H.36a.342.342 0 01-.24-.099H.11L.1 14.89a.34.34 0 01-.1-.24V.36C0 .27.036.184.099.12l.01-.01.01-.01A.343.343 0 01.36 0zm8.521.008a.382.382 0 01.382.38v5.786c0 .21-.17.38-.38.38h-1.518a.38.38 0 01-.38-.38V3.897L7.781 8.66a.38.38 0 01-.533 0L6.175 7.586a.379.379 0 010-.54l4.935-4.76H8.745a.38.38 0 01-.38-.38V.387c0-.21.17-.38.38-.38z">
+        </path>
+      </symbol>
+      <symbol id="facebook-social-icon">
+        <path
+          d="M30 15c0-8.284-6.716-15-15-15C6.716 0 0 6.716 0 15c0 7.487 5.485 13.692 12.656 14.818V19.336H8.848V15h3.808v-3.305c0-3.76 2.24-5.836 5.666-5.836 1.641 0 3.358.293 3.358.293v3.692h-1.892c-1.863 0-2.444 1.156-2.444 2.342V15h4.16l-.665 4.336h-3.495v10.482C24.514 28.692 30 22.487 30 15">
+        </path>
+      </symbol>
+      <symbol id="fax-icon">
+        <path
+          d="M38.62 82.759v49.655h242.76V82.759h10.642c15.388 0 27.978 12.59 27.978 27.978v109.56c0 15.389-12.59 27.979-27.983 27.979H27.977C12.59 248.276 0 235.686 0 220.298V110.737c0-15.388 12.59-27.978 27.978-27.978zm0 113.103c-7.619 0-13.792 6.18-13.792 13.793 0 7.614 6.173 13.793 13.793 13.793 7.619 0 13.793-6.179 13.793-13.793 0-7.614-6.174-13.793-13.793-13.793zM253.794 0v104.828H66.207V0z">
+        </path>
+      </symbol>
+      <symbol id="link-icon">
+        <path d="M2.578 10.527l5.828-5.828V8.17h1.57l.001-6.153H3.823v1.57h3.472l-5.828 5.83z"></path>
+      </symbol>
+      <symbol id="linkedin-social-icon">
+        <path
+          d="M15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0zm4.278 11.661c-1.62 0-2.707.889-3.152 1.731h-.045v-1.465h-3.193v10.717h3.327v-5.3c0-1.398.264-2.753 1.997-2.753 1.71 0 1.73 1.598 1.73 2.842v5.21h3.331v-5.877c0-2.886-.623-5.105-3.995-5.105zm-8.48.266H7.465v10.717H10.8V11.927zM9.133 6.6a1.93 1.93 0 10-.005 3.865A1.93 1.93 0 009.134 6.6z">
+        </path>
+      </symbol>
+      <symbol id="linkedin-square-icon">
+        <path
+          d="M17.043 17.043h-2.966V12.4c0-1.107-.019-2.53-1.541-2.53-1.544 0-1.779 1.206-1.779 2.451v4.72H7.794V7.499h2.844v1.305h.04c.396-.75 1.363-1.542 2.807-1.542 3.003 0 3.558 1.976 3.558 4.547v5.235zM4.45 6.194a1.719 1.719 0 110-3.44 1.72 1.72 0 010 3.44zM2.963 17.043h2.97V7.498h-2.97v9.545zM18.521 0H1.476C.662 0 0 .646 0 1.442v17.116C0 19.354.662 20 1.476 20H18.52c.815 0 1.479-.647 1.479-1.443V1.442C20 .646 19.336 0 18.52 0z"
+          fill-rule="evenodd"></path>
+      </symbol>
+      <symbol id="minus-icon">
+        <path
+          d="M6.892 6.795h4.595A.497.497 0 0012 6.283v-.714a.497.497 0 00-.513-.513H.513A.497.497 0 000 5.569v.714a.497.497 0 00.513.513h4.573z">
+        </path>
+      </symbol>
+      <symbol id="pagination-arrow-bg">
+        <path
+          d="M43 35.327a3.352 3.352 0 01-1.655 2.895L23.664 48.55a3.296 3.296 0 01-3.328 0L2.656 38.222A3.352 3.352 0 011 35.327V14.673c0-1.195.633-2.298 1.655-2.895L20.336 1.45a3.296 3.296 0 013.328 0l17.68 10.327A3.352 3.352 0 0143 14.673z">
+        </path>
+      </symbol>
+      <symbol id="pagination-arrow">
+        <path d="M26.241 24.23L20.878 18l-1.815 1.54L23.764 25l-4.702 5.46L20.878 32l5.363-6.23.662-.77z"></path>
+      </symbol>
+      <symbol id="pause-icon">
+        <path d="M3.75 12h-1.5V0h1.5v12zm6 0h-1.5V0h1.5v12z"></path>
+      </symbol>
+      <symbol id="play-icon">
+        <path d="M.563 10V0l8.875 5z"></path>
+      </symbol>
+      <symbol id="plus-icon">
+        <path
+          d="M6.38 11.948a.497.497 0 00.512-.513v-4.64h4.595A.497.497 0 0012 6.283v-.714a.497.497 0 00-.513-.513H6.892V.551a.498.498 0 00-.145-.369.5.5 0 00-.368-.144H5.6a.501.501 0 00-.369.144.503.503 0 00-.144.369v4.505H.513A.497.497 0 000 5.569v.714a.497.497 0 00.513.513h4.573v4.64a.5.5 0 00.144.367.5.5 0 00.369.145h.78z">
+        </path>
+      </symbol>
+      <symbol id="podcasts-social-icon">
+        <path
+          d="M14 9.6c1.985 0 3.6 1.615 3.6 3.6 0 1.53-.958 2.839-2.306 3.36a5.359 5.359 0 014.015 5.962l-.627 4.387A3.617 3.617 0 0115.118 30h-2.236a3.617 3.617 0 01-3.564-3.09l-.627-4.389a5.36 5.36 0 014.015-5.962A3.604 3.604 0 0110.4 13.2c0-1.985 1.615-3.6 3.6-3.6zM14 0c7.72 0 14 6.28 14 14 0 5.406-3.08 10.105-7.577 12.437l.442-3.093A11.588 11.588 0 0025.6 14c0-6.396-5.204-11.6-11.6-11.6S2.4 7.604 2.4 14c0 3.83 1.866 7.23 4.735 9.344l.442 3.093C3.08 24.105 0 19.406 0 14 0 6.28 6.28 0 14 0zm0 4.8c5.073 0 9.2 4.127 9.2 9.2a9.165 9.165 0 01-2.494 6.291 6.947 6.947 0 00-1.17-2.35A6.758 6.758 0 0020.8 14c0-3.75-3.05-6.8-6.8-6.8S7.2 10.25 7.2 14a6.76 6.76 0 001.264 3.94 6.961 6.961 0 00-1.17 2.351A9.165 9.165 0 014.8 14c0-5.073 4.127-9.2 9.2-9.2z">
+        </path>
+      </symbol>
+      <symbol id="quick-contacts-email">
+        <path
+          d="M10 1.712v6.45c0 .252-.21.463-.464.463H.464A.467.467 0 010 8.161V1.712L5 6.18l5-4.468zm-.506-.337L5 5.464.548 1.375h8.946z">
+        </path>
+      </symbol>
+      <symbol id="quick-contacts-phone">
+        <path
+          d="M10 7.917L8.75 10A8.75 8.75 0 010 1.25L2.083 0 3.75 3.333l-.833.834a2.914 2.914 0 002.916 2.916l.834-.833L10 7.917z">
+        </path>
+      </symbol>
+      <symbol id="search-icon">
+        <path
+          d="M10.686 0a10.24 10.24 0 017.834 16.841l6.086 6.31L22.803 25l-6.185-6.392A10.242 10.242 0 1110.686 0zm0 2.362a7.88 7.88 0 100 15.76 7.88 7.88 0 000-15.76z">
+        </path>
+      </symbol>
+      <symbol id="shape">
+        <path
+          d="M155.868 275C235.388 275 251 166.87 251 87.383 251 7.895 186.537 0 107.017 0 27.497 0-13.826 74.533 4.172 146.495 22.17 218.458 76.35 275 155.868 275z"
+          fill="#CBC8C7" fill-rule="evenodd" opacity=".05"></path>
+      </symbol>
+      <symbol id="twitter-social-icon">
+        <path
+          d="M15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0zm3.915 8.588a3.617 3.617 0 00-3.522 4.44A10.263 10.263 0 017.939 9.25a3.614 3.614 0 001.12 4.828 3.604 3.604 0 01-1.638-.453l-.001.046a3.617 3.617 0 002.901 3.545 3.61 3.61 0 01-1.633.062 3.619 3.619 0 003.378 2.512 7.255 7.255 0 01-4.49 1.548c-.293 0-.58-.017-.863-.05 1.6 1.025 3.5 1.624 5.542 1.624 6.652 0 10.289-5.51 10.289-10.288 0-.157-.003-.313-.01-.468a7.327 7.327 0 001.803-1.872 7.197 7.197 0 01-2.076.569 3.631 3.631 0 001.59-2 7.252 7.252 0 01-2.296.877 3.616 3.616 0 00-2.64-1.142z">
+        </path>
+      </symbol>
+      <symbol id="twitter">
+        <path
+          d="M6.29 16.651c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.354-.012-.53A8.351 8.351 0 0020 2.322a8.21 8.21 0 01-2.357.645 4.117 4.117 0 001.804-2.27 8.212 8.212 0 01-2.605.997 4.107 4.107 0 00-6.993 3.742 11.65 11.65 0 01-8.457-4.287 4.105 4.105 0 001.27 5.477A4.072 4.072 0 01.8 6.113v.052a4.104 4.104 0 003.292 4.022 4.086 4.086 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.22 8.22 0 010 14.808a11.62 11.62 0 006.29 1.84">
+        </path>
+      </symbol>
+      <symbol id="up-arrow">
+        <path d="M4.438.672l-4.45 3.831L1.087 5.8l3.9-3.359L8.889 5.8l1.1-1.297-4.45-3.83L4.987.2z"></path>
+      </symbol>
+      <symbol id="vimeo-social-icon">
+        <path
+          d="M15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0zm5.951 7.803c-2.328-.075-3.906 1.24-4.731 3.95.426-.183.84-.275 1.243-.275.855 0 1.232.481 1.131 1.442-.05.581-.427 1.428-1.13 2.541-.705 1.113-1.233 1.67-1.585 1.67-.453 0-.868-.857-1.245-2.573-.127-.503-.352-1.79-.679-3.858-.302-1.917-1.107-2.812-2.414-2.686-.553.05-1.383.554-2.49 1.512-.804.73-1.622 1.46-2.451 2.19l.79 1.02c.753-.527 1.193-.792 1.319-.792.576 0 1.115.906 1.618 2.717l1.356 4.982c.677 1.812 1.506 2.717 2.485 2.717 1.581 0 3.514-1.487 5.797-4.462 2.21-2.847 3.352-5.091 3.427-6.73.1-2.192-.714-3.314-2.44-3.365z">
+        </path>
+      </symbol>
+      <symbol id="weibo-social-icon">
+        <path
+          d="M14.71 7.665c1.799-.118 5.61-2.092 7.295-.165.743.85.459 2.372 0 3.547.21.112.423.22.637.324l.322.155.161.078.32.155c1.637.807 3.075 1.727 2.752 4.317-.767 6.162-13.817 10.3-21.968 5.773-2.235-1.243-4.549-3.06-4.192-6.68.307-3.116 2.437-5.53 4.528-7.586C6.56 5.62 8.663 4.085 11.524 3.378c3.105-.768 4.022 1.777 3.186 4.287zm-8.385 4.372c-5.933 3.424-3.429 9.58 3.858 10.06 3.86.254 7.723-1.086 9.558-3.134.672-.748 1.345-1.888 1.342-3.215-.013-5.494-9.544-6.72-14.758-3.711zm9.728 3.298c1.786 5.31-7.522 7.779-9.224 3.216-1.139-3.05 1.596-5.478 4.444-5.772 2.43-.251 4.243.969 4.78 2.556zm-6.374.99c-1.984.455-1.6 3.233.587 2.721 1.565-.366 1.775-3.265-.587-2.72zm2.096-.082c.379.645 1.25.181 1.174-.33-.091-.592-1.181-.504-1.174.33zm18.196-9.154c.129 1.644-.154 3.614-1.257 3.711-1.803.159-.863-1.793-.839-2.968.066-3.407-2.89-5.773-5.786-5.773-.82 0-2.726.548-2.433-1.155.133-.75.779-.74 1.425-.825 4.871-.637 8.548 2.656 8.89 7.01zM24.94 9.48c-1.221.08-.765-.822-.839-1.896-.046-.661-.603-1.425-1.09-1.65-.33-.152-.723-.16-1.095-.161h-.245c-.6-.006-1.091-.073-1.091-.828 0-.972.858-.87 1.343-.907 4.443-.333 4.718 5.331 3.017 5.442z">
+        </path>
+      </symbol>
+      <symbol id="youtube-social-icon">
+        <path
+          d="M15.91 20.638V8.743l10.454 5.948-10.455 5.947zM39.164 5.001a5.025 5.025 0 00-3.536-3.56C32.508.6 20 .6 20 .6S7.492.6 4.372 1.441a5.027 5.027 0 00-3.536 3.56C0 8.14 0 14.69 0 14.69s0 6.55.836 9.69a5.028 5.028 0 003.536 3.56c3.12.84 15.628.84 15.628.84s12.508 0 15.628-.84a5.03 5.03 0 003.536-3.56C40 21.24 40 14.69 40 14.69s0-6.55-.836-9.69z">
+        </path>
+      </symbol>
+    </svg>
+  </div>
+  <div class="page-container">
+    <header class="header header--has-jumplinks" data-module="header">
+      <div class="header__sticky">
+        <div class="header__sticky__shadow" style="opacity: 0"></div>
+        <div class="header__sticky-inner container">
+          <div class="header__sticky-left">
+            <a href="/" class="header__logo" aria-label="Xplatform Logo">
+              <picture>
+                <source srcset="/assets/images/logo_xplatform.png?format=webp" type="image/webp"
+                  alt="Xplatform Corporation - Home" />
+
+                <img src="/assets/images/logo_xplatform.png" alt="Xplatform Corporation - Home" loading="lazy"
+                  width="260" height="41" />
+              </picture>
+            </a>
+          </div>
+          <div class="header__sticky-right">
+            <div class="header__sticky-initial" style="transform: translateY(0px); visibility: visible">
+              <nav class="primary-nav" aria-label="Primary Navigation">
+                <ul class="primary-nav__bar" role="menubar">
+                  <li class="primary-nav__main-link" role="menuitem" aria-haspopup="true">
                     <span class="primary-nav__label" tabindex="0">
-                     <a href="#erpSolutionSuite" >ERP Solution Suite</a>
+                      <a href="#erpSystem">ERP System</a>
                     </span>
-                    
                   </li>
-                    
-                    <li
-                      class="primary-nav__main-link"
-                      role="menuitem"
-                      aria-haspopup="true"
-                    >
-                      <span class="primary-nav__label" tabindex="0">
-                        <a href="#industries" >Industries</a>
-                      </span>
+                  <li class="primary-nav__main-link" role="menuitem" aria-haspopup="true">
+                    <span class="primary-nav__label" data-module="genericContent" tabindex="0">
+                      <a href="#ourCompany">Our Company</a>
+                    </span>
+                  </li>
+                  <li class="primary-nav__main-link" role="menuitem" aria-haspopup="true">
+                    <span class="primary-nav__label" tabindex="0">
+                      <a href="#erpSolutionSuite">ERP Solution Suite</a>
+                    </span>
 
-                    </li>
-                    <li
-                      class="primary-nav__main-link"
-                      role="menuitem"
-                      aria-haspopup="true"
-                    >
-                      <span class="primary-nav__label" tabindex="0">
-                        <a href="#insight" >Insight</a>
-                      </span>
+                  </li>
 
-                    </li>
-                    <li class="primary-nav__main-link" role="menuitem">
-                      <a
-                        href="#contactUs"
-                        class="btn btn--primary btn--small"
-                        
-                      >
-                        Contact Us
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+                  <li class="primary-nav__main-link" role="menuitem" aria-haspopup="true">
+                    <span class="primary-nav__label" tabindex="0">
+                      <a href="#industries">Industries</a>
+                    </span>
 
-               
-              </div>
-              <div class="header__sticky-hidden" style="">
-                <div class="sticky-navigation" style="opacity: 0">
-                  <div class="sticky-navigation__left">
-                    <nav
-                      class="sticky-navigation__jump-links"
-                      aria-label="Jump Links"
-                      data-mobile-placeholder="Jump to:"
-                      data-mobile-label="Viewing:"
-                    >
-                    </nav>
-                  </div>
-                  <a class="btn btn--primary btn--small" href="#contactUs" >
-                    Contact Us
-                  </a>
-                </div>
-              </div>
+                  </li>
+                  <li class="primary-nav__main-link" role="menuitem" aria-haspopup="true">
+                    <span class="primary-nav__label" tabindex="0">
+                      <a href="#insight">Insight</a>
+                    </span>
+
+                  </li>
+                  <li class="primary-nav__main-link" role="menuitem">
+                    <a href="#contactUs" class="btn btn--primary btn--small">
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+
             </div>
-          </div>
-                  <div
-                    class="hamburger-menu__submenu"
-                    id="a365003e-24ff-4076-adef-93a540264ea6"
-                  >
-                    <div class="hamburger-menu__submenu-content">
-                      <button class="hamburger-menu__submenu-back">
-                        <svg viewBox="0 0 6 10">
-                          <use xlink:href="#chevron-left"></use>
-                        </svg>
-                        Back to menu
-                      </button>
-                      <span class="hamburger-menu__submenu-title"
-                        >Industries</span
-                      >
-                      <div class="hamburger-menu__submenu-links">
-                        <ul class="hamburger-menu__submenu-column">
-                          <li>
-                            <a href="" tabindex="-1"
-                              >Communications</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href=""
-                              tabindex="-1"
-                              >Financial Services</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href=""
-                              tabindex="-1"
-                              >Healthcare and Life Sciences</a
-                            >
-                          </li>
-                          <li>
-                            <a href="" tabindex="-1"
-                              >Higher Education</a
-                            >
-                          </li>
-                          <li>
-                            <a href="" tabindex="-1"
-                              >Manufacturing</a
-                            >
-                          </li>
-                          <li>
-                            <a href="" tabindex="-1"
-                              >Public Sector</a
-                            >
-                          </li>
-                          <li>
-                            <a href="" tabindex="-1"
-                              >Retail</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href=""
-                              tabindex="-1"
-                              >Travel and Transportation</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-           
-                  <div
-                    class="hamburger-menu__submenu"
-                    id="a57700c6-a741-4914-9949-cc632e7cf6fb"
-                  >
-                    <div class="hamburger-menu__submenu-content">
-                      <button class="hamburger-menu__submenu-back">
-                        <svg viewBox="0 0 6 10">
-                          <use xlink:href="#chevron-left"></use>
-                        </svg>
-                        Back to menu
-                      </button>
-                      <span class="hamburger-menu__submenu-title"
-                        >Insight</span
-                      >
-                      <div class="hamburger-menu__submenu-links">
-                        <ul class="hamburger-menu__submenu-column">
-                          <li>
-                            <a
-                              href=""
-                              tabindex="-1"
-                              >Artificial Intelligence</a
-                            >
-                          </li>
-                          <li>
-                            <a href="" tabindex="-1"
-                              >Cybersecurity</a
-                            >
-                          </li>
-                          <li>
-                            <a href="" tabindex="-1"
-                              >Innovation</a
-                            >
-                          </li>
-                          <li>
-                            <a href="" tabindex="-1"
-                              >Sustainability</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+            <div class="header__sticky-hidden" style="">
+              <div class="sticky-navigation" style="opacity: 0">
+                <div class="sticky-navigation__left">
+                  <nav class="sticky-navigation__jump-links" aria-label="Jump Links" data-mobile-placeholder="Jump to:"
+                    data-mobile-label="Viewing:">
+                  </nav>
                 </div>
+                <a class="btn btn--primary btn--small" href="#contactUs">
+                  Contact Us
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </header>
-      <main id="main">
-        <div class="generic-hero generic-hero--with-card">
-          <div class="generic-hero__inner">
-            <picture class="generic-hero__image">
-              <source
-                srcset="
+        <div class="hamburger-menu__submenu" id="a365003e-24ff-4076-adef-93a540264ea6">
+          <div class="hamburger-menu__submenu-content">
+            <button class="hamburger-menu__submenu-back">
+              <svg viewBox="0 0 6 10">
+                <use xlink:href="#chevron-left"></use>
+              </svg>
+              Back to menu
+            </button>
+            <span class="hamburger-menu__submenu-title">Industries</span>
+            <div class="hamburger-menu__submenu-links">
+              <ul class="hamburger-menu__submenu-column">
+                <li>
+                  <a href="" tabindex="-1">Communications</a>
+                </li>
+                <li>
+                  <a href="" tabindex="-1">Financial Services</a>
+                </li>
+                <li>
+                  <a href="" tabindex="-1">Healthcare and Life Sciences</a>
+                </li>
+                <li>
+                  <a href="" tabindex="-1">Higher Education</a>
+                </li>
+                <li>
+                  <a href="" tabindex="-1">Manufacturing</a>
+                </li>
+                <li>
+                  <a href="" tabindex="-1">Public Sector</a>
+                </li>
+                <li>
+                  <a href="" tabindex="-1">Retail</a>
+                </li>
+                <li>
+                  <a href="" tabindex="-1">Travel and Transportation</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hamburger-menu__submenu" id="a57700c6-a741-4914-9949-cc632e7cf6fb">
+          <div class="hamburger-menu__submenu-content">
+            <button class="hamburger-menu__submenu-back">
+              <svg viewBox="0 0 6 10">
+                <use xlink:href="#chevron-left"></use>
+              </svg>
+              Back to menu
+            </button>
+            <span class="hamburger-menu__submenu-title">Insight</span>
+            <div class="hamburger-menu__submenu-links">
+              <ul class="hamburger-menu__submenu-column">
+                <li>
+                  <a href="" tabindex="-1">Artificial Intelligence</a>
+                </li>
+                <li>
+                  <a href="" tabindex="-1">Cybersecurity</a>
+                </li>
+                <li>
+                  <a href="" tabindex="-1">Innovation</a>
+                </li>
+                <li>
+                  <a href="" tabindex="-1">Sustainability</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </header>
+  <main id="main">
+    <div class="generic-hero generic-hero--with-card">
+      <div class="generic-hero__inner">
+        <picture class="generic-hero__image">
+          <source srcset="
                   /assets/images/_Enterprise_Resource_Planning.jpg?w=767&amp;h=600
-                "
-                alt="Enterprise Platform Services"
-                media="(max-width:767px)"
-              />
-              <source
-                srcset="
+                " alt="Enterprise Platform Services" media="(max-width:767px)" />
+          <source srcset="
                   /assets/images/_Enterprise_Resource_Planning.jpg?w=1280&amp;h=600
-                "
-                alt="Enterprise Platform Services"
-                media="(max-width:1279px)"
-              />
-              <source
-                srcset="
+                " alt="Enterprise Platform Services" media="(max-width:1279px)" />
+          <source srcset="
                   /assets/images/_Enterprise_Resource_Planning.jpg?w=1600&amp;h=750
-                "
-                alt="Enterprise Platform Services"
-                media="(max-width:1599px)"
-              />
+                " alt="Enterprise Platform Services" media="(max-width:1599px)" />
 
-              <img
-                src="/assets/images/_Enterprise_Resource_Planning.jpg"
-                alt="Enterprise Platform Services"
-                loading="lazy"
-                width="1920"
-                height="750"
-              />
-            </picture>
-            <div data-anchor="ERP SYSTEM" id="erpSystem"  class="generic-hero__content container">
-              <h1 class="generic-hero__title">ERP System</h1>
-             <div>
-              <p class="texterp" style="text-align: justify;">ERP system is a multi-tenant system that provides a full range of key modules to support business operations, especially for IT outsourcing companies. With easy-to-customize modules and features, ERP will fully meet the needs of their business and help automate activities related to enterprise resources to reduce processing time and optimize business management.</p>    
-            </div>
+          <img src="/assets/images/_Enterprise_Resource_Planning.jpg" alt="Enterprise Platform Services" loading="lazy"
+            width="1920" height="750" />
+        </picture>
+        <div data-anchor="ERP SYSTEM" id="erpSystem" class="generic-hero__content container">
+          <h1 class="generic-hero__title">ERP System</h1>
+          <div>
+            <p class="texterp" style="text-align: justify;">ERP system is a multi-tenant system that provides a full
+              range of key modules to support business operations, especially for IT outsourcing companies. With
+              easy-to-customize modules and features, ERP will fully meet the needs of their business and help automate
+              activities related to enterprise resources to reduce processing time and optimize business management.</p>
           </div>
-          <div class="generic-hero__sidebar">
-            <div class="generic-hero__sidebar-inner">
+        </div>
+        <div class="generic-hero__sidebar">
+          <div class="generic-hero__sidebar-inner">
 
-              <div class="share-this">
-                <span class="share-this__title">Share This</span>
-                <div class="share-this__icons">
-                  <a
-                    href=""
-                    class="share-this__link"
-                    aria-label="linkedin"
-                    target="_blank"
-                  >
-                    <svg viewBox="0 0 30 30">
-                      <use xlink:href="#linkedin-social-icon"></use>
-                    </svg>
-                  </a>
-                  <a
-                    href=""
-                    class="share-this__link"
-                    aria-label="twitter"
-                    target="_blank"
-                  >
-                    <svg viewBox="0 0 30 30">
-                      <use xlink:href="#twitter-social-icon"></use>
-                    </svg>
-                  </a>
-                  <a
-                    href=""
-                    class="share-this__link"
-                    aria-label="facebook"
-                    target="_blank"
-                  >
-                    <svg viewBox="0 0 30 30">
-                      <use xlink:href="#facebook-social-icon"></use>
-                    </svg>
-                  </a>
-                  <a
-                    href=""
-                    class="share-this__link"
-                    aria-label="email"
-                  >
-                    <svg viewBox="0 0 30 30">
-                      <use xlink:href="#email-social-icon"></use>
-                    </svg>
-                  </a>
-                </div>
+            <div class="share-this">
+              <span class="share-this__title">Share This</span>
+              <div class="share-this__icons">
+                <a href="" class="share-this__link" aria-label="linkedin" target="_blank">
+                  <svg viewBox="0 0 30 30">
+                    <use xlink:href="#linkedin-social-icon"></use>
+                  </svg>
+                </a>
+                <a href="" class="share-this__link" aria-label="twitter" target="_blank">
+                  <svg viewBox="0 0 30 30">
+                    <use xlink:href="#twitter-social-icon"></use>
+                  </svg>
+                </a>
+                <a href="" class="share-this__link" aria-label="facebook" target="_blank">
+                  <svg viewBox="0 0 30 30">
+                    <use xlink:href="#facebook-social-icon"></use>
+                  </svg>
+                </a>
+                <a href="" class="share-this__link" aria-label="email">
+                  <svg viewBox="0 0 30 30">
+                    <use xlink:href="#email-social-icon"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div data-anchor="OUR COMPANY" class="generic-content" data-module="genericContent">
-          <div class="container" id="ourCompany">
-            <div
-            class="s-curve-card"
-            data-module="scurveCard"
-            id="dataOurCompany"
-
-          >
+      <div data-anchor="OUR COMPANY" class="generic-content" data-module="genericContent">
+        <div class="container" id="ourCompany">
+          <div class="s-curve-card" data-module="scurveCard" id="dataOurCompany">
             <div class="s-curve-card__media">
               <figure class="s-curve-card__media-container">
                 <picture>
-                  <source
-                    srcset="
+                  <source srcset="
                       /assets/images/business_solution_company.jpg?w=727&amp;h=409
-                    "
-                    alt="Cloud and Infrastructure Solutions"
-                    media="(max-width:767px)"
-                  />
-                  <source
-                    srcset="
+                    " alt="Cloud and Infrastructure Solutions" media="(max-width:767px)" />
+                  <source srcset="
                       /assets/images/business_solution_company.jpg?w=1239&amp;h=697
-                    "
-                    alt="Cloud and Infrastructure Solutions"
-                    media="(max-width:1279px)"
-                  />
+                    " alt="Cloud and Infrastructure Solutions" media="(max-width:1279px)" />
 
-                  <img
-                    src="/assets/images/business_solution_company.jpg"
-                    alt="Cloud and Infrastructure Solutions"
-                    loading="lazy"
-                    width="1239"
-                    height="697"
-                  />
+                  <img src="/assets/images/business_solution_company.jpg" alt="Cloud and Infrastructure Solutions"
+                    loading="lazy" width="1239" height="697" />
                 </picture>
               </figure>
 
               <picture class="s-curve-card__media-decorator">
-                <source
-                  srcset="/assets/images/sphere.webp"
-                  type="image/webp"
-                />
-                <img
-                  src="/assets/images/sphere.png"
-                  alt="Image Decorator"
-                  width="800"
-                  height="800"
-                  loading="lazy"
+                <source srcset="/assets/images/sphere.webp" type="image/webp" />
+                <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
                   style="
                     transform: translate3d(0px, 0px, 0px)
                       rotate(-1.7621deg) scale(0.9765, 0.9765);
                     opacity: 0.9413;
-                  "
-                />
+                  " />
               </picture>
             </div>
             <div class="s-curve-card__content">
@@ -576,717 +485,525 @@
               </h2>
               <div class="s-curve-card__description rtf">
                 <p style="text-align: justify;">
-                  XPlatform Solution is a consulting and implementing firm of digital transformation and solution for organizations and businesses. At XPlatform, we know that delivering the best customer and digital experience is crucial for top performing brands. We open a gateway to a modern, digital, and global economy, innovating and powering the traditional model of organizations and enterprises to bring them productivity and success.</p>
+                  XPlatform Solution is a consulting and implementing firm of digital transformation and solution for
+                  organizations and businesses. At XPlatform, we know that delivering the best customer and digital
+                  experience is crucial for top performing brands. We open a gateway to a modern, digital, and global
+                  economy, innovating and powering the traditional model of organizations and enterprises to bring them
+                  productivity and success.</p>
               </div>
             </div>
           </div>
         </div>
-        </div>
+      </div>
+      <div data-anchor="ERP SOLUTION SUITE" class="erpSolutionSuite" data-module="erpSolutionSuite">
+        <div class="container" id="erpSolutionSuite">
+          <h2 class="generic-content__title">
+            ERP Solution Suite
+          </h2>
+          <div class="brandWrapper container">
+            <div class="row">
+              <div class="test col-lg-5 col-12 ">
+                  <script src="js/RadialMenu.js"></script>
+                  <script src="js/mainCircle.js"></script>  
+          
+        
+              </div>
+              <div class="content-brand col-lg-7">
+                <div class="display-content active" id="komu">
+                  <div class="photoimage ">
+                    <img class="picture-illustration" src="./assets/images/internal_communication_system.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>Entering the digital era, especially during and after the impact of the global epidemic, remote
+                      working has become more and more popular. Therefore, enterprises need an internal communication
+                      solution to solve the problem of connecting people, manage time and work progress effectively,
+                      create entertaining and gathering space while working remotely. And Komu is all that enterprises
+                      need to solve those problems.</p>
+                  </div>
+                </div>
+                <div class="display-content" id="CRM">
+                  <div class="photoimage">
+                    <img class="picture-illustration" src="./assets/images/customer_relationship_management.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>CRM efficiently supports collecting and managing customer information, tracking and evaluating
+                      potential customers, and in-depth linkage with related departments. CRMs give a single place to
+                      manage information pulled in from email, voice calls, and other channels to help you organize your
+                      workflows and business processes, so you can collaborate, close more deals, and get more done.</p>
+                  </div>
+                </div>
+                <div class="display-content" id="HRM">
+                  <div class="photoimage">
+                    <img class="picture-illustration" src="./assets/images/human_resource_management.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>Human Resource Management (HRM) is a tool to help businesses manage and develop human resources
+                      comprehensively. HRM helps to manage employee information from recruitment to onboarding,
+                      training,
+                      improving, and promoting.
+                      Based on complete and detailed data, enterprises can effectively evaluate and define their human
+                      resource development strategy.
+                    </p>
+                  </div>
+                </div>
+                <div class="display-content" id="checkin">
+                  <div class="photoimage">
+                    <img class="picture-illustration" src="./assets/images/checkin_management.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>Check-in Management is an application which helps to manage and control employee attendance data,
+                      making it quick and simple to exploit and update data, allows employees to track their own
+                      real-time
+                      attendance information and the HR department to easily summarize information for payroll and other
+                      tasks.</p>
+                  </div>
+                </div>
+                <div class="display-content" id="timesheet">
+                  <div class="photoimage">
+                    <img class="picture-illustration" src="./assets/images/timesheet_managment.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>Timesheet Management is a tool wich allow staff, managera and HR to automatically calculates,
+                      stores, and controls employee working time data in a prompt and simple way.</p>
+                  </div>
+                </div>
+                <div class="display-content" id="finfast">
+                  <div class="photoimage">
+                    <img class="picture-illustration" src="./assets/images/finance_management.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>Finance Management (Finfast) is the optimal financial management solution for businesses. Finfast
+                      is a place to help store and digitize invoices and documents of businesses, making management
+                      easier
+                      and more systematic.</p>
+                  </div>
+                </div>
+                <div class="display-content" id="project">
+                  <div class="photoimage">
+                    <img class="picture-illustration" src="./assets/images/project_management_compressed.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>Project Management is a solution to manage human resources, progress, and quality of projects.
+                      All
+                      information about members, tasks, working time, important milestones for each step of the project,
+                      plans, and estimates of the project will be managed systematically to easily control and analyze
+                      the
+                      entire project implementation process.</p>
+                  </div>
+                </div>
+                <div class="display-content" id="IMS">
+                  <div class="photoimage">
+                    <img class="picture-illustration" src="./assets/images/information_managment_system.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>Information Management System (IMS) is an enterprise's management channel of information,
+                      documents, and knowledge. All policies, news, and announcements are updated quickly, accurately,
+                      and
+                      centrally, making it easy for employees to access and not miss information, thereby contributing
+                      to
+                      building internal corporate culture.</p>
+                  </div>
+                </div>
+                <div class="display-content" id="checkpoin">
+                  <div class="photoimage">
+                    <img class="picture-illustration" src="./assets/images/checkpoint_procedure.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>Checkpoint Management provides a solution to review and evaluate employee capacity for the
+                      Research
+                      and Development Department. Based on the set of criteria for assessing capacity, the leader can
+                      evaluate the employee’s strengths & weaknesses, the improvement & achievement, and consider
+                      requesting higher payroll, remuneration or position for the employee.</p>
+                  </div>
+                </div>
+                <div class="display-content" id="talent">
+                  <div class="photoimage">
+                    <img class="picture-illustration" src="./assets/images/talent_management.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>Talent Management is the solution to support companies’ recruitment. It helps to store
+                      recruitment
+                      campaign information, update recruitment progress, recruitment requests, manage candidate
+                      information & application history, plan interview schedule, and report interview result</p>
+                  </div>
+                </div>
+                <div class="display-content" id="LMS">
+                  <div class="photoimage">
+                    <img class="picture-illustration" src="./assets/images/learning_managment_system.jpg" alt="">
+                  </div>
+                  <div class="text-brand">
+                    <p>Learning Management System (LMS) is efficient tool support for training procedures in a company.
+                      All training documents related to each certain technology, level, and position are updated on LMS
+                      so
+                      that newbie can have a complete and systematic tool for learning and improving capabilities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div data-anchor="ERP SOLUTION SUITE" class="erpSolutionSuite" data-module="erpSolutionSuite">
-          <div class="container" id="erpSolutionSuite">
-            <h2 class="generic-content__title">
-              ERP Solution Suite
-            </h2>
-           <div class="brandWrapper">
-             <div class="navbar-brand ">
-                <div class="list-button-brand">
-                    <div class="button-brand" data-target-content="#komu">
-                      <p class="komu" type="button">Internal Communication System (Komu)</p>
-                    </div>
-                    <div class="button-brand" data-target-content="#crm">
-                      <p class="CRM" type="button">Customer Relationship Management (CRM)</p>
-                    </div>
-                    <div class="button-brand" data-target-content="#hrm">
-                      <p class="HRM" type="button">Human Resource Management (HRM)</p>
-                    </div>
-                    <div class="button-brand" data-target-content="#checkin">
-                      <p class="checkin" type="button">Check-in Management</p>
-                    </div>
-                    <div class="button-brand" data-target-content="#timesheet">
-                      <p class="timesheet" type="button">Timesheet Management</p>
-                    </div>
-                    <div class="button-brand" data-target-content="#finfast">
-                      <p class="finfast" type="button">Finance Management (Finfast)</p>
-                    </div>
-                    <div class="button-brand" data-target-content="#project">
-                      <p class="project" type="button">Project Management</p>
-                    </div>
-                    <div class="button-brand" data-target-content="#ims">
-                      <p class="IMS" type="button">Information Management System (IMS)</p>
-                    </div>
-                    <div class="button-brand" data-target-content="#checkpoin">
-                      <p class="checkpoin" type="button">Checkpoint Management</p>
-                    </div>
-                    <div class="button-brand" data-target-content="#talent">
-                      <p class="talent" type="button">Talent Management</p>
-                    </div>
-                    <div class="button-brand" data-target-content="#lms">
-                      <p class="LMS" type="button">Learning Management System (LMS)</p>
-                    </div>
-                </div>
-                <div class="button-scroll">
-                  <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                </div>
-             </div>
-             <div class="content-brand">
-               <div class="display-content active" id="komu">
-                 <div class="photoimage ">
-                   <img class="picture-illustration" src="./assets/images/internal_communication_system.jpg" alt="">
-                 </div>
-                 <div class="text-brand">
-                   <p>Entering the digital era, especially during and after the impact of the global epidemic, remote working has become more and more popular. Therefore, enterprises need an internal communication solution to solve the problem of connecting people, manage time and work progress effectively, create entertaining and gathering space while working remotely. And Komu is all that enterprises need to solve those problems.</p>
-                 </div>
-               </div>
-               <div class="display-content" id="crm">
-                <div class="photoimage">
-                  <img class="picture-illustration" src="./assets/images/customer_relationship_management.jpg" alt="">
-                </div>
-                <div class="text-brand">
-                  <p>CRM efficiently supports collecting and managing customer information, tracking and evaluating potential customers, and in-depth linkage with related departments. CRMs give a single place to manage information pulled in from email, voice calls, and other channels to help you organize your workflows and business processes, so you can collaborate, close more deals, and get more done.</p>
-                </div>
-              </div>
-               <div class="display-content" id="hrm">
-                <div class="photoimage">
-                  <img class="picture-illustration" src="./assets/images/human_resource_management.jpg" alt="">
-                </div>
-                <div class="text-brand">
-                  <p>Human Resource Management (HRM) is a tool to help businesses manage and develop human resources comprehensively. HRM helps to manage employee information from recruitment to onboarding, training, improving, and promoting. 
-                    Based on complete and detailed data, enterprises can effectively evaluate and define their human resource development strategy.                    
-                  </p>
-                </div>
-              </div>
-              <div class="display-content" id="checkin">
-                <div class="photoimage">
-                  <img class="picture-illustration" src="./assets/images/checkin_management.jpg" alt="">
-                </div>
-                <div class="text-brand">
-                  <p>Check-in Management is an application which helps to manage and control employee attendance data, making it quick and simple to exploit and update data, allows  employees to track their own real-time attendance information and the HR department to easily summarize information for payroll and other tasks.</p>
-                </div>
-              </div>
-              <div class="display-content" id="timesheet">
-                <div class="photoimage">
-                  <img class="picture-illustration" src="./assets/images/timesheet_managment.jpg" alt="">
-                </div>
-                <div class="text-brand">
-                  <p>Timesheet Management is a tool wich allow staff, managera and HR to automatically calculates, stores, and controls employee working time data in a prompt and simple way.</p>
-                </div>
-              </div>
-              <div class="display-content" id="finfast">
-                <div class="photoimage">
-                  <img class="picture-illustration" src="./assets/images/finance_management.jpg" alt="">
-                </div>
-                <div class="text-brand">
-                  <p>Finance Management (Finfast) is the optimal financial management solution for businesses. Finfast is a place to help store and digitize invoices and documents of businesses, making management easier and more systematic.</p>
-                </div>
-              </div>
-              <div class="display-content" id="project">
-                <div class="photoimage">
-                  <img class="picture-illustration" src="./assets/images/project_management_compressed.jpg" alt="">
-                </div>
-                <div class="text-brand">
-                  <p>Project Management is a solution to manage human resources, progress, and quality of projects. All information about members, tasks, working time, important milestones for each step of the project, plans, and estimates of the project will be managed systematically to easily control and analyze the entire project implementation process.</p>
-                </div>
-              </div>
-              <div class="display-content" id="ims">
-                <div class="photoimage">
-                  <img class="picture-illustration" src="./assets/images/information_managment_system.jpg" alt="">
-                </div>
-                <div class="text-brand">
-                  <p>Information Management System (IMS)  is an enterprise's management channel of information, documents, and knowledge. All policies, news, and announcements are updated quickly, accurately, and centrally, making it easy for employees to access and not miss information, thereby contributing to building internal corporate culture.</p>
-                </div>
-              </div>
-              <div class="display-content" id="checkpoin">
-                <div class="photoimage">
-                  <img class="picture-illustration" src="./assets/images/checkpoint_procedure.jpg" alt="">
-                </div>
-                <div class="text-brand">
-                  <p>Checkpoint Management provides a solution to review and evaluate employee capacity for the Research and Development Department. Based on the set of criteria for assessing capacity, the leader can evaluate the employee’s strengths & weaknesses, the improvement & achievement, and consider requesting higher payroll, remuneration or position for the employee.</p>
-                </div>
-              </div>
-              <div class="display-content" id="talent">
-                <div class="photoimage">
-                  <img class="picture-illustration" src="./assets/images/talent_management.jpg" alt="">
-                </div>
-                <div class="text-brand">
-                  <p>Talent Management is the solution to support companies’ recruitment. It helps to store recruitment campaign information, update recruitment progress, recruitment requests, manage candidate information & application history, plan  interview schedule, and report interview result</p>
-                </div>
-              </div>
-              <div class="display-content" id="lms">
-                <div class="photoimage">
-                  <img class="picture-illustration" src="./assets/images/learning_managment_system.jpg" alt="">
-                </div>
-                <div class="text-brand">
-                  <p>Learning Management System (LMS) is efficient tool support for training procedures in a company. All training documents related to each certain technology, level, and position are updated on LMS so that newbie can have a complete and systematic tool for learning and improving capabilities.</p>
-                </div>
-              </div>
-             </div>
-           </div>
           </div>
         </div>
-        <div>
-          <div
-            class="block noteworthycontentcarouselblock col-lg-12 col-md-12 col-sm-12 col-xs-12"
-          >
-            <div
-              data-anchor="INDUSTRIES"
-              class="noteworthy-content-carousel"
-              data-module="noteworthyContentCarousel"
-              id="featuredContent"
-            >
-              <div class="container" id="industries">
-                <h2 class="noteworthy-content-carousel__title">
-                  Industries
-                </h2>
-                <div class="noteworthy-content-carousel__slider">
-                  <div
-                    class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
-                  >
-                    <div 
-                      class="swiper-wrapper"
-                      id="show-popups"
-                      style="transform: translate3d(0px, 0px, 0px)"
-                    >
-                      <div
-                        class="swiper-slide swiper-slide-visible swiper-slide-active"
-                        style="margin-right: 32px"
-                      >
-                        <a
-                          class="generic-image-card" 
-                        >
-                          <p class="generic-image-card__pill">Communication</p>
-                          <picture class="generic-image-card__image">
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+      </div>
+      <div>
+        <div class="block noteworthycontentcarouselblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div data-anchor="INDUSTRIES" class="noteworthy-content-carousel" data-module="noteworthyContentCarousel"
+            id="featuredContent">
+            <div class="container" id="industries">
+              <h2 class="noteworthy-content-carousel__title">
+                Industries
+              </h2>
+              <div class="noteworthy-content-carousel__slider">
+                <div
+                  class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                  <div class="swiper-wrapper" id="show-popups" style="transform: translate3d(0px, 0px, 0px)">
+                    <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="margin-right: 32px">
+                      <a class="generic-image-card">
+                        <p class="generic-image-card__pill">Communication</p>
+                        <picture class="generic-image-card__image">
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/communication.jpg?w=280&amp;h=260&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                              " type="image/webp" />
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/communication.jpg?&amp;w=280&amp;h=260
-                              "
-                            />
-                            <source
-                              srcset="
+                              " />
+                          <source srcset="
                                 /assets/images/communication.jpg?w=504&amp;h=470&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <img
-                              src="/assets/images/communication.jpg"
-                              alt="Simplify Workload Automation - featured"
-                              width="504"
-                              height="470"
-                              loading="lazy"
-                            />
-                          </picture>
-                          <div id="test" class="generic-image-card__content">
-                            <h3 class="generic-image-card__title">
-                              XPlatform Solution will help you to embrace new technologies, processes, and <span id="dots5">...</span><span class="more" id="more5"> systems, giving you the agility to meet your clients' changing expectations. Stay competitive in a highly regulated industry by finding new ways to generate revenue from voice or data.</span>
-                            </h3>
-                            <div class="s-curve-card__actions" id="btn5" >
-                              <button onclick="myFunction('myBtn5','dots5','more5')" id="myBtn5"
-                                class="btn btn--primary"
-                              >
-                                Read more
-                              </button>
-                            </div>
-                            <span class="cta-decorator cta-decorator--link " >
-                              <svg viewBox="0 0 12 12">
-                                <use xlink:href="#link-icon"></use>
-                              </svg>
-                            </span>             
+                              " type="image/webp" />
+                          <img src="/assets/images/communication.jpg" alt="Simplify Workload Automation - featured"
+                            width="504" height="470" loading="lazy" />
+                        </picture>
+                        <div id="test" class="generic-image-card__content">
+                          <h3 class="generic-image-card__title">
+                            XPlatform Solution will help you to embrace new technologies, processes, and <span
+                              id="dots5">...</span><span class="more" id="more5"> systems, giving you the agility to
+                              meet your clients' changing expectations. Stay competitive in a highly regulated industry
+                              by finding new ways to generate revenue from voice or data.</span>
+                          </h3>
+                          <div class="s-curve-card__actions" id="btn5">
+                            <button onclick="myFunction('myBtn5','dots5','more5')" id="myBtn5" class="btn btn--primary">
+                              Read more
+                            </button>
                           </div>
-                        </a>
-                        <span class="noteworthy-content-carousel__slide-number"
-                          >01</span
-                        >
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-visible swiper-slide-next"
-                        style="margin-right: 32px"
-                      >
-                        <a
-                          class="generic-image-card"
-                        >
+                          <span class="cta-decorator cta-decorator--link ">
+                            <svg viewBox="0 0 12 12">
+                              <use xlink:href="#link-icon"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                      <span class="noteworthy-content-carousel__slide-number">01</span>
+                    </div>
+                    <div class="swiper-slide swiper-slide-visible swiper-slide-next" style="margin-right: 32px">
+                      <a class="generic-image-card">
                         <p class="generic-image-card__pill">Finance</p>
-                          <picture class="generic-image-card__image">
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                        <picture class="generic-image-card__image">
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/finance.jpg?w=280&amp;h=260&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                              " type="image/webp" />
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/finance.jpg?&amp;w=280&amp;h=260
-                              "
-                            />
-                            <source
-                              srcset="
+                              " />
+                          <source srcset="
                                 /assets/images/finance.jpg?w=504&amp;h=470&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <img
-                              src="/siteassets/images/collateral/analyst-report/finance.jpg"
-                              alt="Analyst Report"
-                              width="504"
-                              height="470"
-                              loading="lazy"
-                            />
-                          </picture>
-                          <div class="generic-image-card__content">
-                            <h3 class="generic-image-card__title">
-                              XPlatform will provide you with an ecosystem that has been modularly integrated. <span id="dots6">...</span><span class="more" id="more6"> It can be deployed as an end-to-end banking solution or as capability "modules'' to supplement an existing banking solution. The solution is based on a digital-first approach. With XPlatform, you'll be able to provide a seamless and secure digital experience to your customers by leveraging cloud innovation. There are many top ranking financial institutions in Australia and the UK that rely on us to help them achieve their digital transformation objectives.</span>
-                            </h3>
-                            <div class="s-curve-card__actions" id="btn6">
-                              <button onclick="myFunction('myBtn6','dots6','more6')" id="myBtn6"
-                                class="btn btn--primary"
-                              >
-                                Read more
-                              </button>
-                            </div>
-                            <span class="cta-decorator cta-decorator--link">
-                              <svg viewBox="0 0 12 12">
-                                <use xlink:href="#link-icon"></use>
-                              </svg>
-                            </span>
+                              " type="image/webp" />
+                          <img src="/siteassets/images/collateral/analyst-report/finance.jpg" alt="Analyst Report"
+                            width="504" height="470" loading="lazy" />
+                        </picture>
+                        <div class="generic-image-card__content">
+                          <h3 class="generic-image-card__title">
+                            XPlatform will provide you with an ecosystem that has been modularly integrated. <span
+                              id="dots6">...</span><span class="more" id="more6"> It can be deployed as an end-to-end
+                              banking solution or as capability "modules'' to supplement an existing banking solution.
+                              The solution is based on a digital-first approach. With XPlatform, you'll be able to
+                              provide a seamless and secure digital experience to your customers by leveraging cloud
+                              innovation. There are many top ranking financial institutions in Australia and the UK that
+                              rely on us to help them achieve their digital transformation objectives.</span>
+                          </h3>
+                          <div class="s-curve-card__actions" id="btn6">
+                            <button onclick="myFunction('myBtn6','dots6','more6')" id="myBtn6" class="btn btn--primary">
+                              Read more
+                            </button>
                           </div>
-                        </a>
-                        <span class="noteworthy-content-carousel__slide-number"
-                          >02</span
-                        >
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-visible"
-                        style="margin-right: 32px"
-                      >
-                        <a
-                          class="generic-image-card c"
-                        >
-                          <p class="generic-image-card__pill">Healthcare</p>
-                          <picture class="generic-image-card__image">
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                          <span class="cta-decorator cta-decorator--link">
+                            <svg viewBox="0 0 12 12">
+                              <use xlink:href="#link-icon"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                      <span class="noteworthy-content-carousel__slide-number">02</span>
+                    </div>
+                    <div class="swiper-slide swiper-slide-visible" style="margin-right: 32px">
+                      <a class="generic-image-card c">
+                        <p class="generic-image-card__pill">Healthcare</p>
+                        <picture class="generic-image-card__image">
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/healthcare.jfif?w=280&amp;h=260&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                              " type="image/webp" />
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/healthcare.jfif?&amp;w=280&amp;h=260
-                              "
-                            />
-                            <source
-                              srcset="
+                              " />
+                          <source srcset="
                                 /assets/images/healthcare.jfif?w=504&amp;h=470&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <img
-                              src="/assets/images/healthcare.jfif"
-                              alt="Woman at laptop with globe"
-                              width="504"
-                              height="470"
-                              loading="lazy"
-                            />
-                          </picture>
-                          <div class="generic-image-card__content">
-                            <h3 class="generic-image-card__title">
-                              Digital innovation has been critical in increasing resilience in the healthcare industry.<span id="dots7">...</span><span class="more" id="more7"> With XPlatform Solution, you'll be able to provide an exceptional experience for your employees and patients by leveraging secure, scalable, cloud-first solutions. You'll improve patient care, make your employees more productive, and ensure the security of your critical systems and patients' healthcare information. With cross-sector experience, established expertise and a focus on healthcare technology, XPlatform Solution can help you deliver innovation.</span>
-                            </h3>
-                            <div class="s-curve-card__actions" id="btn7">
-                              <button onclick="myFunction('myBtn7','dots7','more7')" id="myBtn7"
-                                class="btn btn--primary"
-                              >
-                                Read more
-                              </button>
-                            </div>
-                            <span class="cta-decorator cta-decorator--link">
-                              <svg viewBox="0 0 12 12">
-                                <use xlink:href="#link-icon"></use>
-                              </svg>
-                            </span>
-
+                              " type="image/webp" />
+                          <img src="/assets/images/healthcare.jfif" alt="Woman at laptop with globe" width="504"
+                            height="470" loading="lazy" />
+                        </picture>
+                        <div class="generic-image-card__content">
+                          <h3 class="generic-image-card__title">
+                            Digital innovation has been critical in increasing resilience in the healthcare
+                            industry.<span id="dots7">...</span><span class="more" id="more7"> With XPlatform Solution,
+                              you'll be able to provide an exceptional experience for your employees and patients by
+                              leveraging secure, scalable, cloud-first solutions. You'll improve patient care, make your
+                              employees more productive, and ensure the security of your critical systems and patients'
+                              healthcare information. With cross-sector experience, established expertise and a focus on
+                              healthcare technology, XPlatform Solution can help you deliver innovation.</span>
+                          </h3>
+                          <div class="s-curve-card__actions" id="btn7">
+                            <button onclick="myFunction('myBtn7','dots7','more7')" id="myBtn7" class="btn btn--primary">
+                              Read more
+                            </button>
                           </div>
-                        </a>
-                        <span class="noteworthy-content-carousel__slide-number"
-                          >03</span
-                        >
-                      </div>
-                      <div class="swiper-slide" style="margin-right: 32px">
+                          <span class="cta-decorator cta-decorator--link">
+                            <svg viewBox="0 0 12 12">
+                              <use xlink:href="#link-icon"></use>
+                            </svg>
+                          </span>
 
-                        <a
-                          class="generic-image-card"
-                          tabindex="-1"
-                        >
-                          <p class="generic-image-card__pill" >Public Sector</p>
-                          <picture class="generic-image-card__image">
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                        </div>
+                      </a>
+                      <span class="noteworthy-content-carousel__slide-number">03</span>
+                    </div>
+                    <div class="swiper-slide" style="margin-right: 32px">
+
+                      <a class="generic-image-card" tabindex="-1">
+                        <p class="generic-image-card__pill">Public Sector</p>
+                        <picture class="generic-image-card__image">
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/public_sector.jfif?w=280&amp;h=260&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                              " type="image/webp" />
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/public_sector.jfif?&amp;w=280&amp;h=260
-                              "
-                            />
-                            <source
-                              srcset="
+                              " />
+                          <source srcset="
                                 /assets/images/public_sector.jfif?w=504&amp;h=470&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <img
-                            id="myImg"
-                              src="/siteassets/images/news-releases/public_sector.jfif"
-                              alt="Xplatform News Release"
-                              width="504"
-                              height="470"
-                              loading="lazy"
-                            />
-                          </picture>
-                          <div class="generic-image-card__content" >
-                            <h3 class="generic-image-card__title" >
-                              XPlatform helps public sector organizations in modernizing operations and <span id="dots8">...</span><span class="more" id="more8"> enabling new digital capabilities that save the time, cut down the step and effort, and increase citizen satisfaction. XPlatform helps to create next-generation digital workplaces and environments, improve employee and citizen experiences, and improve performance and productivity. With professional experience, we help government agencies of all sizes in delivering digital government services.</span>
-                            </h3>
-                            <div class="s-curve-card__actions" id="btn8">
-                              <button onclick="myFunction('myBtn8','dots8','more8')" id="myBtn8"
-                                class="btn btn--primary"
-                              >
-                                Read more
-                              </button>
-                            </div>
-                            <span class="cta-decorator cta-decorator--link">
-                              <svg viewBox="0 0 12 12">
-                                <use xlink:href="#link-icon"></use>
-                              </svg>
-                            </span>
+                              " type="image/webp" />
+                          <img id="myImg" src="/siteassets/images/news-releases/public_sector.jfif"
+                            alt="Xplatform News Release" width="504" height="470" loading="lazy" />
+                        </picture>
+                        <div class="generic-image-card__content">
+                          <h3 class="generic-image-card__title">
+                            XPlatform helps public sector organizations in modernizing operations and <span
+                              id="dots8">...</span><span class="more" id="more8"> enabling new digital capabilities that
+                              save the time, cut down the step and effort, and increase citizen satisfaction. XPlatform
+                              helps to create next-generation digital workplaces and environments, improve employee and
+                              citizen experiences, and improve performance and productivity. With professional
+                              experience, we help government agencies of all sizes in delivering digital government
+                              services.</span>
+                          </h3>
+                          <div class="s-curve-card__actions" id="btn8">
+                            <button onclick="myFunction('myBtn8','dots8','more8')" id="myBtn8" class="btn btn--primary">
+                              Read more
+                            </button>
                           </div>
-                        </a>
-                        <span class="noteworthy-content-carousel__slide-number"
-                          >04</span
-                        >
-                      </div>
-                      <div class="swiper-slide" style="margin-right: 32px">
+                          <span class="cta-decorator cta-decorator--link">
+                            <svg viewBox="0 0 12 12">
+                              <use xlink:href="#link-icon"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                      <span class="noteworthy-content-carousel__slide-number">04</span>
+                    </div>
+                    <div class="swiper-slide" style="margin-right: 32px">
 
-                        <a
-                          class="generic-image-card"
-                          tabindex="-1"
-                        >
-                          <p class="generic-image-card__pill">Travel & Transportation</p>
-                          <picture class="generic-image-card__image">
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                      <a class="generic-image-card" tabindex="-1">
+                        <p class="generic-image-card__pill">Travel & Transportation</p>
+                        <picture class="generic-image-card__image">
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/travel.jfif?w=280&amp;h=260&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                              " type="image/webp" />
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/travel.jfif?&amp;w=280&amp;h=260
-                              "
-                            />
-                            <source
-                              srcset="
+                              " />
+                          <source srcset="
                                 /assets/images/travel.jfif?w=504&amp;h=470&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <img
-                              src="/siteassets/images/news-releases/travel.jfif"
-                              alt="Xplatform News Release"
-                              width="504"
-                              height="470"
-                              loading="lazy"
-                            />
-                          </picture>
-                          <div class="generic-image-card__content">
-                            <h3 class="generic-image-card__title">
-                              The pandemic has had a particularly negative impact on the global travel and transportation <span id="dots9">...</span><span class="more" id="more9"> industry. As borders reopen and lockdowns are lifted across countries, you can now concentrate on developing customer-facing processes that are as simple and frictionless as possible, providing greater convenience to passengers, and exploring new business models. We provide devices and data management platforms for tourism  and transportation businesses, making it easier for partners to manage and operate.</span>
-                            </h3>
-                            <div class="s-curve-card__actions" id="btn9">
-                              <button onclick="myFunction('myBtn9','dots9','more9')" id="myBtn9"
-                                class="btn btn--primary"
-                              >
-                                Read more
-                              </button>
-                            </div>
-                            <span class="cta-decorator cta-decorator--link">
-                              <svg viewBox="0 0 12 12">
-                                <use xlink:href="#link-icon"></use>
-                              </svg>
-                            </span>
+                              " type="image/webp" />
+                          <img src="/siteassets/images/news-releases/travel.jfif" alt="Xplatform News Release"
+                            width="504" height="470" loading="lazy" />
+                        </picture>
+                        <div class="generic-image-card__content">
+                          <h3 class="generic-image-card__title">
+                            The pandemic has had a particularly negative impact on the global travel and transportation
+                            <span id="dots9">...</span><span class="more" id="more9"> industry. As borders reopen and
+                              lockdowns are lifted across countries, you can now concentrate on developing
+                              customer-facing processes that are as simple and frictionless as possible, providing
+                              greater convenience to passengers, and exploring new business models. We provide devices
+                              and data management platforms for tourism and transportation businesses, making it easier
+                              for partners to manage and operate.</span>
+                          </h3>
+                          <div class="s-curve-card__actions" id="btn9">
+                            <button onclick="myFunction('myBtn9','dots9','more9')" id="myBtn9" class="btn btn--primary">
+                              Read more
+                            </button>
                           </div>
-                        </a>
-                        <span class="noteworthy-content-carousel__slide-number"
-                          >05</span
-                        >
-                      </div>
-                      <div class="swiper-slide" style="margin-right: 32px">
-                        <a
-                         
-                          class="generic-image-card"
-                          tabindex="-1"
-                        >
-                          <p class="generic-image-card__pill">Education</p>
-                          <picture class="generic-image-card__image">
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                          <span class="cta-decorator cta-decorator--link">
+                            <svg viewBox="0 0 12 12">
+                              <use xlink:href="#link-icon"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                      <span class="noteworthy-content-carousel__slide-number">05</span>
+                    </div>
+                    <div class="swiper-slide" style="margin-right: 32px">
+                      <a class="generic-image-card" tabindex="-1">
+                        <p class="generic-image-card__pill">Education</p>
+                        <picture class="generic-image-card__image">
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/education.jfif?w=280&amp;h=260&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                              " type="image/webp" />
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/education.jfif?&amp;w=280&amp;h=260
-                              "
-                            />
-                            <source
-                              srcset="
+                              " />
+                          <source srcset="
                                 /assets/images/education.jfif?w=504&amp;h=470&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <img
-                              src="/siteassets/images/news-releases/education.jfif"
-                              alt="Xplatform News Release"
-                              width="504"
-                              height="470"
-                              loading="lazy"
-                            />
-                          </picture>
-                          <div class="generic-image-card__content">
-                            <h3 class="generic-image-card__title">
-                              XPlatform is proud to be a provider of technology solutions to improve the quality <span id="dots10">...</span><span class="more" id="more10"> of education and training with information technology applications. We cooperate with universities, colleges, and intermediate schools to develop educational services, providing a better knowledge experience for students. We also provide the education institutions a more effective and convenient way for management, especially certificate management. XPlatform has driven and adopted Blockchain technology to transform the certificate-issuing industry, and strengthen the certificate management and validation processes.</span>
-                            </h3>
-                            <div class="s-curve-card__actions" id="btn10">
-                              <button onclick="myFunction('myBtn10','dots10','more10')" id="myBtn10"
-                                class="btn btn--primary"
-                              >
-                                Read more
-                              </button>
-                            </div>
-                            <span class="cta-decorator cta-decorator--link">
-                              <svg viewBox="0 0 12 12">
-                                <use xlink:href="#link-icon"></use>
-                              </svg>
-                            </span>
+                              " type="image/webp" />
+                          <img src="/siteassets/images/news-releases/education.jfif" alt="Xplatform News Release"
+                            width="504" height="470" loading="lazy" />
+                        </picture>
+                        <div class="generic-image-card__content">
+                          <h3 class="generic-image-card__title">
+                            XPlatform is proud to be a provider of technology solutions to improve the quality <span
+                              id="dots10">...</span><span class="more" id="more10"> of education and training with
+                              information technology applications. We cooperate with universities, colleges, and
+                              intermediate schools to develop educational services, providing a better knowledge
+                              experience for students. We also provide the education institutions a more effective and
+                              convenient way for management, especially certificate management. XPlatform has driven and
+                              adopted Blockchain technology to transform the certificate-issuing industry, and
+                              strengthen the certificate management and validation processes.</span>
+                          </h3>
+                          <div class="s-curve-card__actions" id="btn10">
+                            <button onclick="myFunction('myBtn10','dots10','more10')" id="myBtn10"
+                              class="btn btn--primary">
+                              Read more
+                            </button>
                           </div>
-                        </a>
-                        <span class="noteworthy-content-carousel__slide-number"
-                          >06</span
-                        >
-                      </div>
-                      <div class="swiper-slide" style="margin-right: 32px">
+                          <span class="cta-decorator cta-decorator--link">
+                            <svg viewBox="0 0 12 12">
+                              <use xlink:href="#link-icon"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                      <span class="noteworthy-content-carousel__slide-number">06</span>
+                    </div>
+                    <div class="swiper-slide" style="margin-right: 32px">
 
-                        <a
-                          class="generic-image-card"
-                          tabindex="-1"
-                        >
-                          <p class="generic-image-card__pill">Retail</p>
-                          <picture class="generic-image-card__image">
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                      <a class="generic-image-card" tabindex="-1">
+                        <p class="generic-image-card__pill">Retail</p>
+                        <picture class="generic-image-card__image">
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/retail.jfif?w=280&amp;h=260&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                              " type="image/webp" />
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/retail.jfif?&amp;w=280&amp;h=260
-                              "
-                            />
-                            <source
-                              srcset="
+                              " />
+                          <source srcset="
                                 /assets/images/retail.jfif?w=504&amp;h=470&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <img
-                              src="/siteassets/images/news-releases/retail.jfif"
-                              alt="Xplatform News Release"
-                              width="504"
-                              height="470"
-                              loading="lazy"
-                            />
-                          </picture>
-                          <div class="generic-image-card__content">
-                            <h3 class="generic-image-card__title" id="text">
-                              XPlatform's retail and consumer industry clients are racing and competing to adapt <span id="dots11">...</span><span class="more" id="more11"> to rapidly changing markets and consumer habits. Digital technology presents businesses with new opportunities to build brands, create innovative products, manage channels effectively, and deliver experiences that keep consumers coming back for more. Xplatform leverages these technologies to help your company thrive in an age of constant change and increase positive consumer feedback.</span>
-                            </h3>
-                            <div class="s-curve-card__actions" id="btn11">
-                              <button onclick="myFunction('myBtn11','dots11','more11')" id="myBtn11"
-                                class="btn btn--primary"
-                              >
-                                Read more
-                              </button>
-                            </div>
-                            <span class="cta-decorator cta-decorator--link">
-                              <svg viewBox="0 0 12 12">
-                                <use xlink:href="#link-icon"></use>
-                              </svg>
-                            </span>
+                              " type="image/webp" />
+                          <img src="/siteassets/images/news-releases/retail.jfif" alt="Xplatform News Release"
+                            width="504" height="470" loading="lazy" />
+                        </picture>
+                        <div class="generic-image-card__content">
+                          <h3 class="generic-image-card__title" id="text">
+                            XPlatform's retail and consumer industry clients are racing and competing to adapt <span
+                              id="dots11">...</span><span class="more" id="more11"> to rapidly changing markets and
+                              consumer habits. Digital technology presents businesses with new opportunities to build
+                              brands, create innovative products, manage channels effectively, and deliver experiences
+                              that keep consumers coming back for more. Xplatform leverages these technologies to help
+                              your company thrive in an age of constant change and increase positive consumer
+                              feedback.</span>
+                          </h3>
+                          <div class="s-curve-card__actions" id="btn11">
+                            <button onclick="myFunction('myBtn11','dots11','more11')" id="myBtn11"
+                              class="btn btn--primary">
+                              Read more
+                            </button>
                           </div>
-                        </a>
-                        <span class="noteworthy-content-carousel__slide-number"
-                          >07</span
-                        >
-                      </div>
-                      <div class="swiper-slide" style="margin-right: 32px">
+                          <span class="cta-decorator cta-decorator--link">
+                            <svg viewBox="0 0 12 12">
+                              <use xlink:href="#link-icon"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                      <span class="noteworthy-content-carousel__slide-number">07</span>
+                    </div>
+                    <div class="swiper-slide" style="margin-right: 32px">
 
-                        <a
-                          class="generic-image-card"
-                          tabindex="-1"
-                        >
-                          <p class="generic-image-card__pill">Insurance</p>
-                          <picture class="generic-image-card__image">
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                      <a class="generic-image-card" tabindex="-1">
+                        <p class="generic-image-card__pill">Insurance</p>
+                        <picture class="generic-image-card__image">
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/insurance.jfif?w=280&amp;h=260&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <source
-                              media="(max-width: 1023px)"
-                              srcset="
+                              " type="image/webp" />
+                          <source media="(max-width: 1023px)" srcset="
                                 /assets/images/insurance.jfif?&amp;w=280&amp;h=260
-                              "
-                            />
-                            <source
-                              srcset="
+                              " />
+                          <source srcset="
                                 /assets/images/insurance.jfif?w=504&amp;h=470&amp;format=webp
-                              "
-                              type="image/webp"
-                            />
-                            <img
-                              src="/siteassets/images/news-releases/insurance.jfif"
-                              alt="Xplatform News Release"
-                              width="504"
-                              height="470"
-                              loading="lazy"
-                            />
-                          </picture>
-                          <div class="generic-image-card__content">
-                            <h3 class="generic-image-card__title" id="text">
-                              The XPlatform’s  electronic social insurance declaration software helps <span id="dots12">...</span><span class="more" id="more12"> insurance agencies to declare and submit social insurance documents online via the electronic transaction portals of the social insurance agency. With the XPlatform solution, there will be instructions for using the features, automatically checking the declared data to ensure the establishment of social insurance records in accordance with regulations. The solution can help in employee management with full information about the process of participating in social insurance, supporting the preparation of full sets of social insurance dossiers according to regulations.</span> 
-                            </h3>
-                            <div class="s-curve-card__actions" id="btn12">
-                              <button onclick="myFunction('myBtn12','dots12','more12')" id="myBtn12"
-                                class="btn btn--primary"
-                              >
-                                Read more
-                              </button>
-                            </div>
-                            <span class="cta-decorator cta-decorator--link">
-                              <svg viewBox="0 0 12 12">
-                                <use xlink:href="#link-icon"></use>
-                              </svg>
-                            </span>
+                              " type="image/webp" />
+                          <img src="/siteassets/images/news-releases/insurance.jfif" alt="Xplatform News Release"
+                            width="504" height="470" loading="lazy" />
+                        </picture>
+                        <div class="generic-image-card__content">
+                          <h3 class="generic-image-card__title" id="text">
+                            The XPlatform’s electronic social insurance declaration software helps <span
+                              id="dots12">...</span><span class="more" id="more12"> insurance agencies to declare and
+                              submit social insurance documents online via the electronic transaction portals of the
+                              social insurance agency. With the XPlatform solution, there will be instructions for using
+                              the features, automatically checking the declared data to ensure the establishment of
+                              social insurance records in accordance with regulations. The solution can help in employee
+                              management with full information about the process of participating in social insurance,
+                              supporting the preparation of full sets of social insurance dossiers according to
+                              regulations.</span>
+                          </h3>
+                          <div class="s-curve-card__actions" id="btn12">
+                            <button onclick="myFunction('myBtn12','dots12','more12')" id="myBtn12"
+                              class="btn btn--primary">
+                              Read more
+                            </button>
                           </div>
-                        </a>
-                        <span class="noteworthy-content-carousel__slide-number"
-                          >08</span
-                        >
-                      </div>
+                          <span class="cta-decorator cta-decorator--link">
+                            <svg viewBox="0 0 12 12">
+                              <use xlink:href="#link-icon"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                      <span class="noteworthy-content-carousel__slide-number">08</span>
                     </div>
                   </div>
-                  <div class="noteworthy-content-carousel__controls">
-                    <div class="noteworthy-content-carousel__scrollbar">
-                      <div
-                        class="swiper-scrollbar-drag"
-                        style="
+                </div>
+                <div class="noteworthy-content-carousel__controls">
+                  <div class="noteworthy-content-carousel__scrollbar">
+                    <div class="swiper-scrollbar-drag" style="
                           transform: translate3d(0px, 0px, 0px);
                           width: 587.795px;
-                        "
-                      ></div>
-                    </div>
-                    <div
-                      class="noteworthy-content-carousel__actions"
-                      tabindex="0"
-                      aria-label="Carousel Navigation"
-                    >
-                      <div
-                        class="noteworthy-content-carousel__prev swiper-button-disabled"
-                        role="button"
-                        aria-label="Previous"
-                      >
-                        <svg viewBox="0 0 30 30">
-                          <use xlink:href="#arrow-left"></use>
-                        </svg>
-                      </div>
-                      <div
-                        class="noteworthy-content-carousel__next"
-                        role="button"
-                        aria-label="Next"
-                      >
-                        <svg viewBox="0 0 30 30">
-                          <use xlink:href="#arrow-right"></use>
-                        </svg>
-                      </div>
-                    </div>
+                        "></div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="block bannerblock col-lg-12 col-md-12 col-sm-12 col-xs-12"
-          >
-            <div
-              data-anchor="INSIGHT"
-              class="full-width-banner container"
-            >
-              <div class="container"  id="insight">
-
-                <h2>Insight</h2>
-                <div class="box-block_insight">
-                  <button class="accordion_s" data-bs-taget="#collapseOne">Artificial Intelligence <i class="fa fa-plus" aria-hidden="true"></i></button>
-                  <div class="panel_s active" id="collapseOne"> 
-                    <div class="textbox">
-                      <p style="text-align: justify;">The most advanced companies understand that while cloud sets you up with next-level computing power and access to new kinds of data in the right quantity and quality, AI is the bridge to convert that data into business value.  XPlatform offers AI consulting services and solutions that will help you lower your risk, achieve your business objectives faster, while setting you up for sustainable growth. </p>
+                  <div class="noteworthy-content-carousel__actions" tabindex="0" aria-label="Carousel Navigation">
+                    <div class="noteworthy-content-carousel__prev swiper-button-disabled" role="button"
+                      aria-label="Previous">
+                      <svg viewBox="0 0 30 30">
+                        <use xlink:href="#arrow-left"></use>
+                      </svg>
                     </div>
-                  </div>
-                  
-                  <button class="accordion_s" data-bs-taget="#collapseTwo">Blockchain Technologies <i class="fa fa-plus" aria-hidden="true"></i></button>
-                  <div class="panel_s" id="collapseTwo">   
-                    <div class="textbox">
-                      <p style="text-align: justify;">Blockchain is changing the way the world lives and works, but it is only a means to an end, not the end in and of itself. We can assist you in utilizing this technology to propel your future transformation.
-                        XPlatform creates a gateway to a global economy built on blockchains, innovating and powering the traditional model of  finance, game, education, payment, entertainment, insurance, etc.</p>
-                    </div>
-                  </div>
-                  
-                  <button class="accordion_s" data-bs-taget="#collapseThree">Innovation<i class="fa fa-plus" aria-hidden="true"></i></button>
-                  <div class="panel_s" id="collapseThree">
-                    <div class="textbox">
-                      <p style="text-align: justify;">The wave of technology keeps moving, settling down and being afraid to deviate from the status quo are certain to be left behind. Therefore, instead of settling, we always try to update and improve our knowledge to deal with every challenge and innovation.</p>
-                    </div>
-                  </div>
-
-                  <button class="accordion_s" data-bs-taget="#collapseFour">Sustainability<i class="fa fa-plus" aria-hidden="true"></i></button>
-                  <div class="panel_s" id="collapseFour">
-                    <div class="textbox">
-                      <p style="text-align: justify;">In business, sustainability refers to doing business without negatively impacting the environment, community, or society as a whole. Beyond helping curb global challenges, sustainability can drive business success. At XPlatform, we use environmental, social, and governance metrics to analyze organization’s ethical impact and sustainability practices. We examine factors such as a company’s carbon footprint, water usage, community development efforts, and board diversity.</p>
+                    <div class="noteworthy-content-carousel__next" role="button" aria-label="Next">
+                      <svg viewBox="0 0 30 30">
+                        <use xlink:href="#arrow-right"></use>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -1294,196 +1011,267 @@
             </div>
           </div>
         </div>
-      </main>
-      
-      <footer class="footer"  id="contactUs" data-module="contactus" >
-        <div class="container">
-          <div class="footer__top">
-            <div class="container_s" > 
-              <h2 class="text-center">GET IN TOUCH</h2>
-              <div class="nk-gap-1"></div>
-              <p class="lead text-center">Get connected! We would love to hear from you. Please fill in the form below, leave a message and we will get back to you as soon as possible.</p>
-              <div class="row">
-                  <div class="col-lg-6" id="top">
-                      <h2 class="nk-title h3 text-center">LEAVE US A MESSAGE</h2>
 
-                      <div id="mce-responses" class="clear foot">
-                        <div
-                          class="response"
-                          id="mce-error-response"
-                          style="display: none; text-align: center; color: red; "
-                        ></div>
-                        <div
-                          class="response"
-                          id="mce-success-response"
-                          style="display: none; text-align: center; color: forestgreen;"
-                        ></div>
-                      </div>
+        <div class="block bannerblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div data-anchor="INSIGHT" class="full-width-banner container">
+            <div class="container" id="insight">
 
-              <form
-                method="post"
-                id="contact-form"
-                action="#"
-                class="nk-form nk-form-ajax nk-form-style-1"
-              >
+              <h2>Insight</h2>
+              <div class="box-block_insight">
+                <button class="accordion_s" data-bs-taget="#collapseOne">Artificial Intelligence <i class="fa fa-plus"
+                    aria-hidden="true"></i></button>
+                <div class="panel_s active" id="collapseOne">
+                  <div class="textbox">
+                    <p style="text-align: justify;">The most advanced companies understand that while cloud sets you up
+                      with next-level computing power and access to new kinds of data in the right quantity and quality,
+                      AI is the bridge to convert that data into business value. XPlatform offers AI consulting services
+                      and solutions that will help you lower your risk, achieve your business objectives faster, while
+                      setting you up for sustainable growth. </p>
+                  </div>
+                </div>
+
+                <button class="accordion_s" data-bs-taget="#collapseTwo">Blockchain Technologies <i class="fa fa-plus"
+                    aria-hidden="true"></i></button>
+                <div class="panel_s" id="collapseTwo">
+                  <div class="textbox">
+                    <p style="text-align: justify;">Blockchain is changing the way the world lives and works, but it is
+                      only a means to an end, not the end in and of itself. We can assist you in utilizing this
+                      technology to propel your future transformation.
+                      XPlatform creates a gateway to a global economy built on blockchains, innovating and powering the
+                      traditional model of finance, game, education, payment, entertainment, insurance, etc.</p>
+                  </div>
+                </div>
+
+                <button class="accordion_s" data-bs-taget="#collapseThree">Innovation<i class="fa fa-plus"
+                    aria-hidden="true"></i></button>
+                <div class="panel_s" id="collapseThree">
+                  <div class="textbox">
+                    <p style="text-align: justify;">The wave of technology keeps moving, settling down and being afraid
+                      to deviate from the status quo are certain to be left behind. Therefore, instead of settling, we
+                      always try to update and improve our knowledge to deal with every challenge and innovation.</p>
+                  </div>
+                </div>
+
+                <button class="accordion_s" data-bs-taget="#collapseFour">Sustainability<i class="fa fa-plus"
+                    aria-hidden="true"></i></button>
+                <div class="panel_s" id="collapseFour">
+                  <div class="textbox">
+                    <p style="text-align: justify;">In business, sustainability refers to doing business without
+                      negatively impacting the environment, community, or society as a whole. Beyond helping curb global
+                      challenges, sustainability can drive business success. At XPlatform, we use environmental, social,
+                      and governance metrics to analyze organization’s ethical impact and sustainability practices. We
+                      examine factors such as a company’s carbon footprint, water usage, community development efforts,
+                      and board diversity.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer class="footer" id="contactUs" data-module="contactus">
+    <div class="container">
+      <div class="footer__top">
+        <div class="container_s">
+          <h2 class="text-center">GET IN TOUCH</h2>
+          <div class="nk-gap-1"></div>
+          <p class="lead text-center">Get connected! We would love to hear from you. Please fill in the form below,
+            leave a message and we will get back to you as soon as possible.</p>
+          <div class="row">
+            <div class="col-lg-6" id="top">
+              <h2 class="nk-title h3 text-center">LEAVE US A MESSAGE</h2>
+
+              <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display: none; text-align: center; color: red; ">
+                </div>
+                <div class="response" id="mce-success-response"
+                  style="display: none; text-align: center; color: forestgreen;"></div>
+              </div>
+
+              <form method="post" id="contact-form" action="#" class="nk-form nk-form-ajax nk-form-style-1">
                 <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control required"
-                    name="email"
-                    placeholder="Email *"
-                  />
+                  <input type="email" class="form-control required" name="email" placeholder="Email *" />
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control required"
-                    name="fullname"
-                    placeholder="Name *"
-                  />
+                  <input type="text" class="form-control required" name="fullname" placeholder="Name *" />
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="form-group">
-                  <input
-                    type="tel"
-                    name="phone"
-                    class="form-control required input-lg info-input"
-                    pattern="[0-9]{10}"
-                    placeholder="Phone *"
-                    id="phone"
-                  />
+                  <input type="tel" name="phone" class="form-control required input-lg info-input" pattern="[0-9]{10}"
+                    placeholder="Phone *" id="phone" />
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="form-group">
-                  <textarea
-                    class="form-control required"
-                    name="message"
-                    rows="5"
-                    placeholder="Message *"
-                  ></textarea>
-                  <input
-                    type="hidden"
-                    class="hiddenRecaptcha required"
-                    name="hiddenRecaptcha"
-                    id="hiddenRecaptcha"
-                  />
+                  <textarea class="form-control required" name="message" rows="5" placeholder="Message *"></textarea>
+                  <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha" />
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="row">
                   <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div
-                      class="g-recaptcha"
-                      name="grecaptcha"
-                      data-callback="recaptchaCallback"
-                      data-sitekey="6Lf8xlYgAAAAAJ4-p1kT7vBlo-DwVcXaWKThc_Ap"
-                    ></div>
+                    <div class="g-recaptcha" name="grecaptcha" data-callback="recaptchaCallback"
+                      data-sitekey="6Lf8xlYgAAAAAJ4-p1kT7vBlo-DwVcXaWKThc_Ap"></div>
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="button-send">
-                      <button
-                        class="active"
-                        id="loading-send"
-                      >
+                      <button class="" id="loading-send">
                         <span class="icon-spinner"><i class="fa fa-spinner" aria-hidden="true"></i></span> Sending...
                       </button>
-                      <input
-                        type="submit"
-                        class="btn myButtonSend btn--primary"
-                        value="Send Message"
-                        data-animation="fadeInUpBig"
-                      />
+                      <input type="submit" class="btn myButtonSend btn--primary" value="Send Message"
+                        data-animation="fadeInUpBig" />
                     </div>
                   </div>
                 </div>
               </form>
-                  </div>
-                  <div class="col-lg-6 our-details">
-                      <h2 class="nk-title h3 text-center">OUR DETAILS</h2>
-                      <div id="contact-info">
-                          <ul>
-                              <li><svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg><!-- <i class="fa fa-envelope"></i> -->
-                                  <p>Email: <span class="colored"><a href="mailto:studio@ncc.asia">info@xplatform.solutions</a></span>
-                                  </p></li>
-                              <li><svg class="svg-inline--fa fa-phone fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg><!-- <i class="fa fa-phone"></i> -->
-                                  <p>Phone: <span class="colored"><a href="tel:+1(803)635585">+84 246.687.4606</a></span>
-                                  </p></li>
-                              <li><svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fa" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg><!-- <i class="fa fa-map-marker"></i> -->
-                                  <p>Ha Noi Office: <span class="colored">5th Floor, A2 Ecolife, 58 To Huu, Nam Tu Liem, Ha Noi.</span>
-                                  </p></li>
-                              <li><svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fa" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg><!-- <i class="fa fa-map-marker"></i> -->
-                                  <p>Ha Noi Office: <span class="colored">7th Floor, 8 Pham Hung, Nam Tu Liem, Ha Noi.</span>
-                                  </p></li>
-                              <li><svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fa" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg><!-- <i class="fa fa-map-marker"></i> -->
-                                  <p>Ho Chi Minh Office: <span class="colored">The Office, 340/15A Ung Van Khiem, Binh Thanh, Ho Chi Minh.</span>
-                                  </p></li>
-                              <li><svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fa" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg><!-- <i class="fa fa-map-marker"></i> -->
-                                  <p>Da Nang Office: <span class="colored">4th Floor, Ricco Building, 363 Nguyen Huu Tho, Cam Le, Da Nang.</span>
-                                  </p></li>
-                              <li><svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fa" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg><!-- <i class="fa fa-map-marker"></i> -->
-                                  <p>Vinh Office: <span class="colored">138 Ha Huy Tap, Vinh, Nghe An.</span>
-                                  </p></li>
-                          </ul>
-                      </div>
-                  </div>
+            </div>
+            <div class="col-lg-6 our-details">
+              <h2 class="nk-title h3 text-center">OUR DETAILS</h2>
+              <div id="contact-info">
+                <ul>
+                  <li><svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" data-prefix="fa"
+                      data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                      data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                      </path>
+                    </svg><!-- <i class="fa fa-envelope"></i> -->
+                    <p>Email: <span class="colored"><a href="mailto:studio@ncc.asia">info@xplatform.solutions</a></span>
+                    </p>
+                  </li>
+                  <li><svg class="svg-inline--fa fa-phone fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="phone"
+                      role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+                      </path>
+                    </svg><!-- <i class="fa fa-phone"></i> -->
+                    <p>Phone: <span class="colored"><a href="tel:+1(803)635585">+84 246.687.4606</a></span>
+                    </p>
+                  </li>
+                  <li><svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fa"
+                      data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                      data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                      </path>
+                    </svg><!-- <i class="fa fa-map-marker"></i> -->
+                    <p>Ha Noi Office: <span class="colored">5th Floor, A2 Ecolife, 58 To Huu, Nam Tu Liem, Ha
+                        Noi.</span>
+                    </p>
+                  </li>
+                  <li><svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fa"
+                      data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                      data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                      </path>
+                    </svg><!-- <i class="fa fa-map-marker"></i> -->
+                    <p>Ha Noi Office: <span class="colored">7th Floor, 8 Pham Hung, Nam Tu Liem, Ha Noi.</span>
+                    </p>
+                  </li>
+                  <li><svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fa"
+                      data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                      data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                      </path>
+                    </svg><!-- <i class="fa fa-map-marker"></i> -->
+                    <p>Ho Chi Minh Office: <span class="colored">The Office, 340/15A Ung Van Khiem, Binh Thanh, Ho Chi
+                        Minh.</span>
+                    </p>
+                  </li>
+                  <li><svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fa"
+                      data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                      data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                      </path>
+                    </svg><!-- <i class="fa fa-map-marker"></i> -->
+                    <p>Da Nang Office: <span class="colored">4th Floor, Ricco Building, 363 Nguyen Huu Tho, Cam Le, Da
+                        Nang.</span>
+                    </p>
+                  </li>
+                  <li><svg class="svg-inline--fa fa-map-marker-alt fa-w-12" aria-hidden="true" data-prefix="fa"
+                      data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                      data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                      </path>
+                      <defs>
+                        <linearGradient id="myGradient" gradientTransform="rotate(112.7)">
+                          <stop offset="40.68%"  stop-color="#1979BD" />
+                          <stop offset="69.99%" stop-color="#0F4FA8" />
+                        </linearGradient>
+                      </defs>
+                    </svg><!-- <i class="fa fa-map-marker"></i> -->
+                    <p>Vinh Office: <span class="colored">138 Ha Huy Tap, Vinh, Nghe An.</span>
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer__bottom">
-          <div class="container">
-            <div class="nk-gap-1"></div>
-            <div class="nk-footer-links">
-              <p>© Copyright Xplatform 2022. All Rights Reserved.</p>
-            </div>
-            <div class="nk-gap-1"></div>
-          </div>
-        </div>
-      </footer>
-      <div id="consent_blackbar">
-        <style>
-          @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&family=Rubik:wght@400;700&display=swap");   
-        </style>
-        </div>
-        <script
-          type="text/javascript"
-          id="truste_0.661442230197381"
-          src="https://consent.trustarc.com/notice?domain=Xplatform.com&amp;js=nj&amp;noticeType=bb&amp;c=teconsent&amp;gtm=1&amp;text=true"
-        ></script>
       </div>
     </div>
-      <div id="popup-modal">
-        <div class="boxtext">
-          <h2  class="title">Lorem ipsum dolor sit amet.
-          </h2>
-          <p style="text-align: justify ;" class="content">Content</p>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="nk-gap-1"></div>
+        <div class="nk-footer-links">
+          <p>© Copyright Xplatform 2022. All Rights Reserved.</p>
         </div>
-        <div type="button" class="close">X</div>
-     </div>
-    <div id="popup-overlay">
+        <div class="nk-gap-1"></div>
+      </div>
     </div>
- 
-    <script src="./javascripts/main.js"></script>
-    <!-- <script src="./javascripts/features/XplatformUpdateBrowser2009.js"></script> -->
-    <script src="./javascripts/vendors/jquery/jquery-3.6.0.js"></script>
-    <script src="./javascripts/bootstrap.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-    <script src="custom.js" type="text/javascript"></script>
-    <script src="./javascripts/ui.js"></script>
-    <script type="text/javascript" src="javascripts/jquery.validate.js"></script>
-    <script src="javascripts/contact-form.js"></script>
+  </footer>
+  <div id="consent_blackbar">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&family=Rubik:wght@400;700&display=swap");
+    </style>
+  </div>
+  <script type="text/javascript" id="truste_0.661442230197381"
+    src="https://consent.trustarc.com/notice?domain=Xplatform.com&amp;js=nj&amp;noticeType=bb&amp;c=teconsent&amp;gtm=1&amp;text=true"></script>
+  </div>
+  </div>
+  <div id="popup-modal">
+    <div class="boxtext">
+      <h2 class="title">Lorem ipsum dolor sit amet.
+      </h2>
+      <p style="text-align: justify ;" class="content">Content</p>
+    </div>
+    <div type="button" class="close">X</div>
+  </div>
+  <div id="popup-overlay">
+  </div>
+  <script src="./javascripts/app.js"></script>
 
-        
+  <script src="./javascripts/main.js"></script>
+  <!-- <script src="./javascripts/features/XplatformUpdateBrowser2009.js"></script> -->
+  <script src="./javascripts/vendors/jquery/jquery-3.6.0.js"></script>
+  <script src="./javascripts/bootstrap.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+  <script src="custom.js" type="text/javascript"></script>
+  <script src="./javascripts/ui.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.validate.js"></script>
+  <script src="javascripts/contact-form.js"></script>
+  <script src="rpie.js"></script>
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-216WCKWPN9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-216WCKWPN9');
   </script>
-   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="dist/js/circle.js"></script>
+  <script src="/dist/js/circular-menu.js"> </script>
+  <script src="js/Test.js"> </script>
 
-  </body>
+</body>
+
 </html>
