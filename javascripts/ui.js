@@ -76,6 +76,7 @@ function toggleAccordion() {
       const idElement = this.getAttribute("data-bs-taget");
       const contentElement = document.querySelector(idElement);
       contentElement.classList.add("active");
+      
     });
   });
 }
@@ -173,7 +174,7 @@ function showSolutionSuite() {
       contentElement.classList.add("active");
     });
   });
-  console.log("showSolutionSuite");
+  // console.log("showSolutionSuite");
 }
 
 showSolutionSuite();
