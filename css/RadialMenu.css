@@ -2,37 +2,34 @@ div.menuHolder {
     user-select: none;
     -moz-user-select: none;
     position: relative;
-    margin: 10px;
-}
-div.test{
-    justify-content: center;
 }
 
 @media (min-width: 80em) {
-    div.menuHolder svg.menu  {
-      height: calc(100% +4rem);
-      width: calc(100% +4rem);
+    div.menuHolder svg.menu {
+        height: calc(100%);
+        width: calc(100%);
     }
-  }
+}
 
 @media (min-width: 90em) {
-    div.menuHolder svg.menu  {
-      height: calc(100% + 4rem);
-      width: calc(100% + 4rem);
+    div.menuHolder svg.menu {
+        height: calc(100% + 3rem);
+        width: calc(100% + 3rem);
     }
-  }
-  @media (min-width: 100em) {
-    div.menuHolder svg.menu  {
-      height: calc(100% + 6.5rem);
-      width: calc(100% + 6.5rem);
-    }
-  }
+}
 
-  @media (max-width: 1024px) {
-    .row{
+@media (min-width: 100em) {
+    div.menuHolder svg.menu {
+        height: calc(100% + 4.5rem);
+        width: calc(100% + 4.5rem);
+    }
+}
+
+@media (max-width: 1024px) {
+    .row {
         justify-content: center;
     }
-  }
+}
 
 svg.icons {
     display: none;
@@ -83,11 +80,10 @@ g.sector {
 
 g.sector>path {
     stroke: url('#myGradient')
-
 }
 
 #midc {
-     stroke: url('#myGradient')
+    stroke: url('#myGradient')
 }
 
 
@@ -154,6 +150,7 @@ svg.menu>g.center:hover>circle {
 svg.menu>g.center>circle {
     cursor: pointer;
 }
+
 svg.menu>g.center>circle>text {
     cursor: pointer;
     fill: #FFFFFF;
@@ -164,6 +161,5 @@ svg.menu>g.center>text,
 svg.menu>g.center:hover>text,
 svg.menu>g.center>use {
     cursor: pointer;
-    fill: white ;
+    fill: white;
 }
-

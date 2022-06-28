@@ -497,7 +497,7 @@
           </h2>
           <div class="brandWrapper container">
             <div class="row">
-              <div class="test col-lg-5 col-12 ">
+              <div class="test col-12 ">
                 <script src="./js//RadialMenu.js"></script>
                 <script src="./js/mainCircle.js"></script>
 
@@ -1199,27 +1199,38 @@
 
               <form method="post" id="contact-form" action="#" class="nk-form nk-form-ajax nk-form-style-1">
                 <div class="form-group">
-                  <input type="email" class="form-control required" name="email" placeholder="Email *" />
+                  <input type="email" class="form-control required" name="email" placeholder="Email *">
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="form-group">
-                  <input type="text" class="form-control required" name="fullname" placeholder="Name *" />
+                  <input type="text" class="form-control required" name="fullname" placeholder="Name *">
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="form-group">
                   <input type="tel" name="phone" class="form-control required input-lg info-input" pattern="[0-9]{10}"
-                    placeholder="Phone *" id="phone" />
+                    placeholder="Phone *" id="phone">
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="form-group">
                   <textarea class="form-control required" name="message" rows="5" placeholder="Message *"></textarea>
-                  <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha" />
+                  <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="row">
                   <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="g-recaptcha" name="grecaptcha" data-callback="recaptchaCallback"
-                      data-sitekey="6LfShfEfAAAAAKNNA6z0MTJIVTVba8uvFlvC1Xmk"></div>
+                      data-sitekey="6LfShfEfAAAAAKNNA6z0MTJIVTVba8uvFlvC1Xmk">
+                      <div style="width: 304px; height: 78px;">
+                        <div><iframe title="reCAPTCHA"
+                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfShfEfAAAAAKNNA6z0MTJIVTVba8uvFlvC1Xmk&amp;co=aHR0cHM6Ly94cGxhdGZvcm0uc29sdXRpb25zOjQ0Mw..&amp;hl=en&amp;v=4rwLQsl5N_ccppoTAwwwMrEN&amp;size=normal&amp;cb=mi8re0g2ukct"
+                            width="304" height="78" role="presentation" name="a-1b352up5u2gy" frameborder="0"
+                            scrolling="no"
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                        </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                          class="g-recaptcha-response"
+                          style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                      </div><iframe style="display: none;"></iframe>
+                    </div>
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="button-send">
@@ -1227,7 +1238,7 @@
                         <span class="icon-spinner"><i class="fa fa-spinner" aria-hidden="true"></i></span> Sending...
                       </button>
                       <input type="submit" class="btn myButtonSend btn--primary" value="Send Message"
-                        data-animation="fadeInUpBig" />
+                        data-animation="fadeInUpBig">
                     </div>
                   </div>
                 </div>
@@ -1248,15 +1259,15 @@
                     </p>
                   </li>
                   <li><svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" data-prefix="fa"
-                    data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                    data-fa-i2svg="">
-                    <path fill="currentColor"
-                      d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
-                    </path>
-                  </svg><!-- <i class="fa fa-envelope"></i> -->
-                  <p>Email: <span class="colored"><a href="mailto:studio@ncc.asia">info@xplatform.solutions</a></span>
-                  </p>
-                </li>
+                      data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                      data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                      </path>
+                    </svg><!-- <i class="fa fa-envelope"></i> -->
+                    <p>Email: <span class="colored"><a href="mailto:studio@ncc.asia">info@xplatform.solutions</a></span>
+                    </p>
+                  </li>
 
                   <li><svg class="svg-inline--fa fa-phone fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="phone"
                       role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">

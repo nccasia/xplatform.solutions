@@ -196,7 +196,7 @@ RadialMenu.prototype.createMenu = function (classValue, levelItems, nested) {
 
     var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('class', classValue);
-    svg.setAttribute('viewBox', '-50 -50 100 100');
+    svg.setAttribute('viewBox', '-50 -48 100 100');
     svg.setAttribute('width', self.size);
     svg.setAttribute('height', self.size);
 
