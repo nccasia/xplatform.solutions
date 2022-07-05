@@ -271,7 +271,7 @@ html {
     scroll-snap-type: y mandatory;
   }
   h1 {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 1.05;
@@ -311,42 +311,47 @@ html {
     }
   }
   h2 {
-    font-family: Vollkorn, serif;
-    font-size: 2.25rem;
+    font-family: Poppins, serif;
+    font-size: 30px;
     font-weight: 600;
     line-height: 1.11;
     margin: 0px 0px 0.9375rem;
+    text-transform: uppercase;
   }
   @media (max-width: 425px) {
     h1 {
       font-size: 1.7rem;
+      text-transform: uppercase;
 
     }
   }
   @media (max-width: 414px) {
     h2{
       font-size: 1.7rem;
+      text-transform: uppercase;
 
     }
   }
   @media (min-width: 80em) {
     h2 {
-      font-size: 3rem;
+      font-size: 30px;
       line-height: 1.09;
       margin-bottom: 1.5rem;
+      text-transform: uppercase;
     }
   }
   @media (min-width: 100em) {
     h2 {
-      font-size: 3.375rem;
+      font-size: 30px;
       line-height: 1.07;
       margin-bottom: 1.875rem;
+      text-transform: uppercase;
     }
   }
   h3 {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.875rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.07;
     margin: 0px 0px 0.9375rem;
   }
@@ -362,7 +367,7 @@ html {
     }
   }
   h4 {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.625rem;
     font-weight: 600;
     line-height: 1.08;
@@ -375,7 +380,7 @@ html {
     }
   }
   h5 {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.08;
@@ -388,7 +393,7 @@ html {
     }
   }
   h6 {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.3125rem;
     font-weight: 600;
     line-height: 1.1;
@@ -499,7 +504,7 @@ html {
   body {
     background-color: rgb(37, 40, 42);
     color: rgb(255, 255, 255);
-    font-family: Rubik, sans-serif;
+    font-family: Poppins, sans-serif;
   }
   body.has-modal {
     width: 100%;
@@ -2149,7 +2154,7 @@ html {
     }
   }
   .share-this__title {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.25rem;
     font-weight: 400;
     letter-spacing: 0.05rem;
@@ -2270,7 +2275,7 @@ html {
     }
   }
   .testimonial-banner__slide-content {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-weight: 600;
     position: relative;
   }
@@ -4590,7 +4595,7 @@ html {
     align-items: flex-end;
     background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.85));
     display: flex;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     height: 100%;
@@ -5567,7 +5572,7 @@ html {
   }
   .spotlight-card-generic__testimonial-body,
   .spotlight-card-generic__testimonial-body p {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     line-height: 1.17;
   }
@@ -5828,7 +5833,7 @@ html {
     position: relative;
   }
   .text-callout-card__title {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 5rem;
     font-weight: 700;
     line-height: 1;
@@ -5840,7 +5845,7 @@ html {
     }
   }
   .text-callout-card__subtitle {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.875rem;
     font-weight: 600;
     line-height: 1.07;
@@ -5863,7 +5868,7 @@ html {
   .text-callout-card__background-title {
     -webkit-text-stroke: 0.125rem rgb(186, 12, 47);
     color: transparent;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 7.5rem;
     font-weight: 600;
     left: -0.9375rem;
@@ -6204,7 +6209,7 @@ html {
     -webkit-box-align: end;
     align-items: flex-end;
     display: flex;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     height: 100%;
@@ -7061,7 +7066,7 @@ html {
   }
   .blockquote__text {
     display: flex;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.875rem;
     line-height: 1.07;
     margin-bottom: 0px;
@@ -7545,7 +7550,7 @@ html {
     color: rgb(255, 255, 255);
     cursor: pointer;
     display: block;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.17;
@@ -7760,7 +7765,7 @@ html {
     color: rgb(255, 255, 255);
     cursor: pointer;
     display: block;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.17;
@@ -8273,7 +8278,7 @@ html {
     counter-increment: tabs 1;
     cursor: pointer;
     display: block;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.875rem;
     font-weight: 600;
     line-height: 1.18;
@@ -9009,7 +9014,7 @@ html {
     }
   }
   .earnings-release-table__table-row th {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.3125rem;
     font-weight: 600;
     letter-spacing: normal;
@@ -10716,6 +10721,7 @@ html {
   .generic-hero__title {
     margin: 0px;
     max-width: 67.5rem;
+    text-transform: uppercase;
   }
 
   .generic-hero__info {
@@ -11414,7 +11420,7 @@ html {
     border-radius: 50%;
     color: rgb(37, 40, 42);
     display: flex;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.25rem;
     font-weight: 600;
     height: 6.25rem;
@@ -11759,7 +11765,7 @@ html {
     }
   }
   .jump-link-list__title {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.17;
@@ -12470,7 +12476,7 @@ html {
     opacity: 0;
   }
   .media-link-table__item-title {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.3125rem;
     font-weight: 600;
     line-height: 1.1;
@@ -12567,9 +12573,9 @@ html {
     }
   }
   h3 {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.875rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.07;
     margin: 0px 0px 0.9375rem;
   }
@@ -12585,7 +12591,7 @@ html {
     }
   }
   .news-detail-content__text h3 p {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     margin: 0px 0px 0.9375rem;
     font-size: 1.875rem !important;
     font-weight: 600 !important;
@@ -13106,7 +13112,7 @@ html {
     border-radius: 0px;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.17;
@@ -14284,7 +14290,7 @@ html {
     color: rgb(255, 255, 255);
     cursor: pointer;
     display: block;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.17;
@@ -14464,7 +14470,7 @@ html {
   .subnavigation__list a {
     color: rgb(255, 255, 255);
     display: inline-block;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.3125rem;
     font-weight: 600;
     line-height: 1.29;
@@ -14552,7 +14558,7 @@ html {
     border-radius: 0px;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.17;
@@ -14682,7 +14688,7 @@ html {
     }
   }
   .tab-faceted-listing__card-title {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.3125rem;
     font-weight: 600;
     line-height: 1.29;
@@ -14763,7 +14769,7 @@ html {
     border-radius: 0px;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.17;
@@ -15428,7 +15434,7 @@ html {
     line-height: 1.67;
   }
   .video-carousel__slide-caption {
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.5rem;
     font-weight: 600;
     margin-left: 16px;
@@ -16053,7 +16059,7 @@ html {
     border-bottom: 0.0625rem solid rgb(167, 169, 169);
     color: rgb(255, 255, 255);
     display: flex;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.625rem;
     font-weight: 600;
     -webkit-box-pack: justify;
@@ -16285,7 +16291,7 @@ html {
   }
   .hamburger-menu__search-suggestions-title {
     display: block;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.625rem;
     font-weight: 600;
     line-height: 1.23;
@@ -16380,7 +16386,6 @@ html {
     .hamburger-menu__submenu {
       height: calc(100vh - 3.75rem);
       top: 3.75rem;
-      transform: translateX(100%);
     }
   }
   @media (min-width: 80em) {
@@ -16442,7 +16447,7 @@ html {
   }
   .hamburger-menu__submenu-title {
     display: block;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 1.625rem;
     font-weight: 600;
     line-height: 1.23;
@@ -16704,7 +16709,7 @@ html {
   }
   .header-search__suggestions-title {
     display: block;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 2.25rem;
     font-weight: 600;
     line-height: 1.11;
@@ -16805,7 +16810,7 @@ html {
   @media (min-width: 80em) {
     .header__sticky-inner {
       display: flex;
-      height: 7.5rem;
+      height: 5.5rem;
       -webkit-box-pack: justify;
       justify-content: space-between;
     }
@@ -16905,7 +16910,7 @@ html {
   @media (min-width: 80em) {
     .header__sticky-hidden,
     .header__sticky-initial {
-      height: 7.5rem;
+      height: 5.5rem;
       position: relative;
     }
   }
@@ -17210,7 +17215,7 @@ html {
   }
   .modal__title {
     display: block;
-    font-family: Vollkorn, serif;
+    font-family: Poppins, serif;
     font-size: 2.25rem;
     font-weight: 600;
     line-height: 1.11;
@@ -18176,6 +18181,9 @@ html {
       flex: 0 0 50%;
       max-width: 50%;
     }
+  }    
+  .our-details {
+    padding: 0;
   }
   @media (max-width: 768px) {
     .our-details {
@@ -18714,7 +18722,7 @@ html {
   }
   
   .text-brand {
-    text-align: justify;
+    text-align: left;
   }
   
   .button-brand {

@@ -60,10 +60,6 @@ var svgMenu = new RadialMenu({
   size: 400,
   closeOnClick: true,
   menuItems: menuItems,
-  onClick: function (item) {
-    console.log("You have clicked:", item.id, item.title);
-  },
-  
 });
 svgMenu.open();
 
