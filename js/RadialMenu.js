@@ -234,7 +234,6 @@ RadialMenu.prototype.createMenu = function (classValue, levelItems, nested) {
                 self.handleClick();
                 break;
             case 'center':
-                self.handleCenterClick();
                 break;
             default:
         }

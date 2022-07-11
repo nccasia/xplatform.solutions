@@ -60,8 +60,6 @@ function MenuCircle() {
       });
       Content.classList.add("active");
       document.getElementById("midc").classList.remove("fillBlue");
-
-      console.log(Content);
     });
   });
 }

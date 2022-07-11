@@ -1,3 +1,16 @@
+$("#shareRoundIcons").jsSocials({
+  showLabel: false,
+  showCount: false,
+  shares: ["linkedin","twitter","facebook","email"]
+});
+const item = document.querySelector(".jssocials-share-email .jssocials-share-link")
+undefined
+item.removeChild(item.firstChild)
+item.classList.add("share-this__link");
+item.setAttribute("aria-label","email");
+item.innerHTML=`<svg viewBox="0 0 30 30">
+<use xlink:href="#email-social-icon"></use>
+</svg>`
 function PopupUI() {
     const popupModal = document.querySelector("#popup-modal");
     const popupModalTitle = document.querySelector("#popup-modal .title");
