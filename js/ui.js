@@ -11,6 +11,13 @@ item.setAttribute("aria-label","email");
 item.innerHTML=`<svg viewBox="0 0 30 30">
 <use xlink:href="#email-social-icon"></use>
 </svg>`
+const itemMail = document.querySelector(".share-this__link");
+itemMail.addEventListener("mouseover",()=>{
+  itemMail.firstChild.style.fill="#007aff";
+})
+itemMail.addEventListener("mouseout",()=>{
+  itemMail.firstChild.style.fill="white";
+})
 function PopupUI() {
     const popupModal = document.querySelector("#popup-modal");
     const popupModalTitle = document.querySelector("#popup-modal .title");

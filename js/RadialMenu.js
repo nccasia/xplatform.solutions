@@ -264,10 +264,6 @@ RadialMenu.prototype.onKeyDown = function (event) {
     if (self.currentMenu) {
         switch (event.key) {
             case 'Escape':
-            case 'Backspace':
-                self.handleCenterClick();
-                event.preventDefault();
-                break;
             case 'Enter':
                 self.handleClick();
                 event.preventDefault();
