@@ -297,7 +297,7 @@ html {
   
   @media (min-width: 80em) {
     h1 {
-      font-size: 4rem;
+      font-size: 2.25rem;
       line-height: 1;
       margin-bottom: 2rem;
     }
@@ -17997,7 +17997,7 @@ html {
   }
   .row > [class*="col-"] {
     position: relative;
-    /* padding: 15px; */
+    padding: 15px;
   }
   @media (min-width: 992px) {
     .col-lg-6 {
@@ -18921,26 +18921,26 @@ html {
   }
   .jssocials-share-link { border-radius: 50%; }
   .jssocials-share-linkedin .jssocials-share-link  {
-    background:  white !important;
+    background:  white ;
     display: flex;
     justify-content: center;
     width: 30px;
     height: 30px;
-    margin-left: 0.6em!important;
+    margin-left: 0.6em;
 }
 .jssocials-share-logo{
   color: #000;
-  font-size: 1.1em!important;
+  font-size: 1.1em;
 }
 .jssocials-share-twitter .jssocials-share-link{
-  background:  white !important;
+  background:  white;
   display: flex;
   justify-content: center;
   width: 30px;
   height: 30px;
 }
 .jssocials-share-facebook .jssocials-share-link{
-  background:  white !important;
+  background:  white;
   display: flex;
   justify-content: center;
   width: 30px;
@@ -18948,18 +18948,33 @@ html {
 }
 .jssocials-share-facebook .jssocials-share-link .jssocials-share-logo{
   color: #000;
-  font-size: 1.5em!important;
+  font-size: 1.5em;
 }
 .jssocials-share-email .jssocials-share-link {
   width: 30px;
   height: 30px;
   padding: 0;
-  background: none!important;
+  background: none;
 }
 .jssocials-share {
-  margin: 0.3em 1.6em 0.3em 0!important;
+  margin: 0.3em 1.6em 0.3em 0;
 }
 .jssocials-shares {
   display: flex;
     flex-wrap: nowrap;
+}
+.jssocials-share-email .jssocials-share-link:hover {
+  background: none;
+}
+.share-this__link{
+  border-radius: 50%;
+}
+.jssocials-share-twitter .jssocials-share-link:hover {
+  background: #007aff;
+}
+.jssocials-share-facebook .jssocials-share-link:hover {
+  background: #007aff;
+}
+.jssocials-share-linkedin .jssocials-share-link:hover {
+  background: #007aff;
 }
