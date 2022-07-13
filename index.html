@@ -36,12 +36,11 @@
     href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Pathway+Gothic+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
     rel="stylesheet">
   <title>Business Solution Company | 1platform</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/RadialMenu.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/RadialMenu.css">
   <style>
     .cn-menu1 {
       position: absolute;
@@ -252,6 +251,9 @@
         <div class="header__sticky__shadow" style="opacity: 0"></div>
         <div class="header__sticky-inner container">
           <div class="header__sticky-left">
+            <button aria-label="Hamburger Menu" style="display: none;" class="header__hamburger-menu-toggle">
+              <span></span>
+            </button>
             <a href="/" class="header__logo" aria-label="1platform Logo">
               <picture>
                 <source srcset="/assets/images/logo_1platform.png?format=webp" type="image/webp"
@@ -272,7 +274,7 @@
                     </span>
                   </li>
                   <li class="primary-nav__main-link" role="menuitem" aria-haspopup="true">
-                    <span class="primary-nav__label" data-module="genericContent" tabindex="0">
+                    <span class="primary-nav__label" tabindex="0">
                       <a href="#ourCompany">Our Company</a>
                     </span>
                   </li>
@@ -327,7 +329,7 @@
               </svg>
               Back to menu
             </button>
-            <span class="hamburger-menu__submenu-title">Industries</span>
+            <span id="Industries" class="hamburger-menu__submenu-title">Industries</span>
             <div class="hamburger-menu__submenu-links">
               <ul class="hamburger-menu__submenu-column">
                 <li>
@@ -423,15 +425,15 @@
               <span class="share-this__title">Share This</span>
               <div class="share-this__icons">
                 <div id="shareRoundIcons"></div>
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-                  <script src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div data-anchor="OUR COMPANY" class="generic-content" data-module="genericContent">
+      <div data-anchor="OUR COMPANY" class="generic-content">
         <div class="container" id="ourCompany">
           <div class="s-curve-card" data-module="scurveCard" id="dataOurCompany">
             <div class="s-curve-card__media">
@@ -500,15 +502,6 @@
                         create entertaining and gathering space while working remotely. And Komu is all that enterprises
                         need to solve those problems.</p>
                     </div>
-                    <picture class="s-curve-card__media-decorato">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                   <div class="display-content" id="CRM">
                     <div class="photoimage">
@@ -524,15 +517,6 @@
                         workflows and business processes, so you can collaborate, close more deals, and get more done.
                       </p>
                     </div>
-                    <picture class="s-curve-card__media-decorato">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                   <div class="display-content" id="HRM">
                     <div class="photoimage">
@@ -548,15 +532,6 @@
                         resource development strategy.
                       </p>
                     </div>
-                    <picture class="s-curve-card__media-decorato">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                   <div class="display-content" id="checkin">
                     <div class="photoimage">
@@ -572,15 +547,6 @@
                         other
                         tasks.</p>
                     </div>
-                    <picture class="s-curve-card__media-decorato">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                   <div class="display-content" id="timesheet">
                     <div class="photoimage">
@@ -591,15 +557,6 @@
                       <p>Timesheet Management is a tool which allow staff, manager and HR to automatically calculates,
                         stores, and controls employee working time data in a prompt and simple way.</p>
                     </div>
-                    <picture class="s-curve-card__media-decorato s-curve-card__media-decorat">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                   <div class="display-content" id="finfast">
                     <div class="photoimage">
@@ -613,15 +570,6 @@
                         easier
                         and more systematic.</p>
                     </div>
-                    <picture class="s-curve-card__media-decorato s-curve-card__media-decorat">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                   <div class="display-content" id="project">
                     <div class="photoimage">
@@ -637,15 +585,6 @@
                         the
                         entire project implementation process.</p>
                     </div>
-                    <picture class="s-curve-card__media-decorato">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                   <div class="display-content" id="IMS">
                     <div class="photoimage">
@@ -660,15 +599,6 @@
                         to
                         building internal corporate culture.</p>
                     </div>
-                    <picture class="s-curve-card__media-decorato">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                   <div class="display-content" id="checkpoin">
                     <div class="photoimage">
@@ -682,15 +612,6 @@
                         evaluate the employee’s strengths & weaknesses, the improvement & achievement, and consider
                         requesting higher payroll, remuneration or position for the employee.</p>
                     </div>
-                    <picture class="s-curve-card__media-decorato">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                   <div class="display-content" id="talent">
                     <div class="photoimage">
@@ -703,15 +624,6 @@
                         campaign information, update recruitment progress, recruitment requests, manage candidate
                         information & application history, plan interview schedule, and report interview result</p>
                     </div>
-                    <picture class="s-curve-card__media-decorato">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                   <div class="display-content" id="LMS">
                     <div>
@@ -729,17 +641,18 @@
                         </p>
                       </div>
                     </div>
-                    <picture class="s-curve-card__media-decorato">
-                      <source srcset="/assets/images/sphere.webp" type="image/webp" />
-                      <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
-                        style="
-                          transform: translate3d(0px, 0px, 0px)
-                            rotate(-1.7621deg) scale(0.9765, 0.9765);
-                          opacity: 0.9413;
-                        " />
-                    </picture>
                   </div>
                 </div>
+                <picture class="s-curve-card__media-decorato">
+                  <source srcset="/assets/images/sphere.webp" type="image/webp" />
+                  <img src="/assets/images/sphere.png" alt="Image Decorator" width="800" height="800" loading="lazy"
+                    style="
+                      transform: translate3d(0px, 0px, 0px)
+                        rotate(-1.7621deg) scale(0.9765, 0.9765);
+                      opacity: 0.9413;
+                    " />
+                </picture>
+
               </div>
             </div>
           </div>
@@ -1213,9 +1126,11 @@
                 <div class="row" style="display: flex;justify-content: center">
                   <div>
                     <div class="button-send">
-                      <button class="" id="loading-send">
-                        <span class="icon-spinner"><i class="fa fa-spinner" aria-hidden="true"></i></span> Sending...
-                      </button>
+                      <div style="height: 50px;">
+                        <button class="" id="loading-send">
+                          <span class="icon-spinner"><i class="fa fa-spinner" aria-hidden="true"></i></span> Sending...
+                        </button>
+                      </div>
                       <input type="submit" class="btn myButtonSend btn--primary" value="Send Message"
                         data-animation="fadeInUpBig">
                     </div>
@@ -1385,13 +1300,8 @@
   <script type="text/javascript" src="javascripts/jquery.validate.js"></script>
   <script src="javascripts/contact-form.js"></script>
   <script src="rpie.js"></script> -->
-  <script src="./js/bootstrap.bundle.minf3c5.js"></script>
-  <script src="./js/features/UnisysUpdateBrowserf3c5.js"></script>
   <script src="./js/main.bundle020f.js"></script>
-  <script src="./js/vendors/jquery/"></script>
   <script src="./js/ui.js"></script>
-
-  <script src="./js/rpie.js"></script>
   <script src="./js/circle.js"></script>
   <script src="./js/jquery.listtopie.js"></script>
   <script src="./js/jquery.listtopie.min.js"></script>
@@ -1406,11 +1316,10 @@
 
     gtag('config', 'G-216WCKWPN9');
   </script>
-  <script src="dist/js/circle.js"></script>
-  <script src="/dist/js/circular-menu.js"> </script>
-  <script src="javascripts/circle.js"> </script>
   <script src="js/vendors/contact-form.js"> </script>
   <script src="js/jquery.validate.js"> </script>
+  <script src="./js/bootstrap.bundle.minf3c5.js"></script>
+  <script src="./js/features/UnisysUpdateBrowserf3c5.js"></script>
 
 </body>
 

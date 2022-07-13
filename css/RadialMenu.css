@@ -25,6 +25,21 @@ div.menuHolder {
     }
 }
 
+@media (max-width: 375px) {
+    div.menuHolder svg.menu {
+        height: calc(100% - 2rem);
+        width: calc(100%);
+    }
+}
+@media (max-width: 320px) {
+    div.menuHolder svg.menu {
+        height: calc(100% - 5rem);
+        width: calc(100%);
+    }
+}
+
+
+
 @media (max-width: 1024px) {
     .row {
         justify-content: center;
