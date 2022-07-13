@@ -199,18 +199,18 @@ function PopupUI() {
   
   showSolutionSuite();
   
-  (function topFunction() {
-    // document.querySelector(".list-button-brand").scrollTop = 1000;
-    const btnClick = document.querySelector(".button-scroll");
-    btnClick.addEventListener("click", () => {
-      const turnImg = btnClick.querySelector(".fa-arrow-down");
-      turnImg.classList.toggle("turn");
-      const addHeight = document.querySelector(".brandWrapper");
-      addHeight.classList.toggle("auto");
-      const heightImg = document.querySelectorAll(".photoimage");
-      heightImg.forEach((height) => {
-        height.classList.toggle("add");
-      });
-    });
-  })();
+  // (function topFunction() {
+  //   // document.querySelector(".list-button-brand").scrollTop = 1000;
+  //   const btnClick = document.querySelector(".button-scroll");
+  //   btnClick.addEventListener("click", () => {
+  //     const turnImg = btnClick.querySelector(".fa-arrow-down");
+  //     turnImg.classList.toggle("turn");
+  //     const addHeight = document.querySelector(".brandWrapper");
+  //     addHeight.classList.toggle("auto");
+  //     const heightImg = document.querySelectorAll(".photoimage");
+  //     heightImg.forEach((height) => {
+  //       height.classList.toggle("add");
+  //     });
+  //   });
+  // })();
   

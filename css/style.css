@@ -18135,6 +18135,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: right;
+    flex-direction: column-reverse;
   }
   .btn_s:not(:disabled):not(.disabled) {
     cursor: pointer;
@@ -18832,6 +18833,8 @@ html {
     align-items: center;
     gap: 5px;
     margin-right: 10px;
+    margin-top: 9px;
+
   }
   
   #loading-send.active {
@@ -18848,10 +18851,24 @@ html {
     top: 0px;
     z-index: -1;
   }
+  /* @media () {
+    .s-curve-card__media-decorato {
+      height: calc(100% + 11.5rem);
+      top: -12.5rem;
+          transform: translate(398px, 105px);
+
+    }
+  } */
   @media (min-width: 80em) {
     .s-curve-card__media-decorato {
-      height: calc(100% + 17.5rem);
-      top: -14.5rem;
+      height: calc(100% + 10.5rem);
+    top: -12.5rem;
+    }
+  }
+  @media (min-width: 90em) {
+    .s-curve-card__media-decorato {
+      height: calc(100% + 7.5rem);
+      top: -11.5rem;
     }
   }
     @media (min-width: 80em) {
@@ -18862,7 +18879,8 @@ html {
   }
   @media (min-width: 100em) {
     .s-curve-card__media-decorato {
-      height: calc(100% + 17.5rem);
+      height: calc(100% + 12.5rem);
+      top: -13.5rem;
     }
   }
   @media (min-width: 100em) {
@@ -18894,6 +18912,27 @@ html {
 
     }
   }
+  @media (min-width: 1025px) and (max-width:1279px) {
+    .s-curve-card__media-decorato {
+      transform: translate(395px, -30px);
+  }
+    
+  }
+  @media (min-width: 1025px) and (max-width:1084px) {
+    .brandWrapper {
+      flex-direction: column;
+      height: auto;
+      
+  }
+  .content-brand {
+    width: 100%;
+    
+  }
+  .brandWrapper .row{
+    justify-content: center;
+  }
+}
+  
 
   /* custom css */
   .content-des, .text-brand p{
