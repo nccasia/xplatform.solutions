@@ -251,6 +251,9 @@
         <div class="header__sticky__shadow" style="opacity: 0"></div>
         <div class="header__sticky-inner container">
           <div class="header__sticky-left">
+            <button aria-label="Hamburger Menu" style="display: none;" class="header__hamburger-menu-toggle">
+              <span></span>
+            </button>
             <a href="/" class="header__logo" aria-label="1platform Logo">
               <picture>
                 <source srcset="/assets/images/logo_1platform.png?format=webp" type="image/webp"
@@ -326,7 +329,7 @@
               </svg>
               Back to menu
             </button>
-            <span class="hamburger-menu__submenu-title">Industries</span>
+            <span id="Industries" class="hamburger-menu__submenu-title">Industries</span>
             <div class="hamburger-menu__submenu-links">
               <ul class="hamburger-menu__submenu-column">
                 <li>
@@ -422,15 +425,15 @@
               <span class="share-this__title">Share This</span>
               <div class="share-this__icons">
                 <div id="shareRoundIcons"></div>
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-                  <script src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div data-anchor="OUR COMPANY" class="generic-content" >
+      <div data-anchor="OUR COMPANY" class="generic-content">
         <div class="container" id="ourCompany">
           <div class="s-curve-card" data-module="scurveCard" id="dataOurCompany">
             <div class="s-curve-card__media">
@@ -1297,8 +1300,6 @@
   <script type="text/javascript" src="javascripts/jquery.validate.js"></script>
   <script src="javascripts/contact-form.js"></script>
   <script src="rpie.js"></script> -->
-  <script src="./js/bootstrap.bundle.minf3c5.js"></script>
-  <script src="./js/features/UnisysUpdateBrowserf3c5.js"></script>
   <script src="./js/main.bundle020f.js"></script>
   <script src="./js/ui.js"></script>
   <script src="./js/circle.js"></script>
@@ -1317,6 +1318,8 @@
   </script>
   <script src="js/vendors/contact-form.js"> </script>
   <script src="js/jquery.validate.js"> </script>
+  <script src="./js/bootstrap.bundle.minf3c5.js"></script>
+  <script src="./js/features/UnisysUpdateBrowserf3c5.js"></script>
 
 </body>
 

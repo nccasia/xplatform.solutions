@@ -109,8 +109,8 @@ function PopupUI() {
   
     $("body, html").animate(
       {
-        scrollTop: position,
-      } /* speed */
+        scrollTop: position
+      },'fast' /* speed */
     );
   });
   
