@@ -16955,27 +16955,30 @@ html {
   .header__logo {
     display: block;
     position: relative;
-    width: 10rem;
+    width: 14rem;
     z-index: 100000;
   }
   @media (min-width: 80em) {
     .header__logo {
-      width: 13rem;
+      width: 16.5rem;
     }
   }
   @media (min-width: 90em) {
     .header__logo {
-      width: 16.25rem;
+      width: 19.5rem;
     }
   }
   .header__logo img {
     height: auto;
-    width: 90%;
+    width: 100%;
   }  
   @media (max-width: 425px){
     .header__logo img {
       width: 13rem;
     }
+    .header__logo {
+      width: 13rem;
+  }
     .header{
       top:9px
     }
@@ -16984,6 +16987,9 @@ html {
     .header__logo img {
       width: 12rem;
     }
+    .header__logo {
+      width: 12rem;
+  }
     .header{
       top:9px
     }
@@ -17311,7 +17317,7 @@ html {
       top: 0.9375rem;
     }
   }
-  @media (min-width: 320px) and (max-width:374px) {
+  @media (min-width: 320px) and (max-width:390px) {
     .EPiServerForms .sticky-navigation .FormSubmitButton,
     .sticky-navigation .EPiServerForms .FormSubmitButton,
     .sticky-navigation .btn {
