@@ -102,16 +102,34 @@ function PopupUI() {
   }
   toggleAccordion();
   
-  $("a[href^='#']").click(function (e) {
-    e.preventDefault();
-  
-    var position = $($(this).attr("href")).offset().top - 110;
-  
-    $("body, html").animate(
-      {
-        scrollTop: position
-      },'fast' /* speed */
-    );
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+      let value =target.offset().top - 110
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: value
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+        });
+      }
+    }
   });
   
   function validateContactForm() {

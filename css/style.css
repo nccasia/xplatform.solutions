@@ -4614,6 +4614,13 @@ html {
     top: 0px;
     z-index: -1;
   }
+
+  @media (min-width: 375px) and (max-width:450px) {
+    .s-curve-card__media-decorator {
+      height: calc(100% + 7.375rem);
+      top: -71px;
+    }
+  }
   @media (min-width: 80em) {
     .s-curve-card__media-decorator {
       height: calc(100% + 7.5rem);
@@ -10515,7 +10522,12 @@ html {
   }
   @media (min-width: 80em) {
     .generic-hero__inner {
-      height: 46.875rem;
+      height: 27.875rem;
+    }
+  }
+  @media (min-width: 768px) and (max-width:1280px) {
+    .generic-hero__inner {
+      height: 27.5rem;
     }
   }
   @media print {
@@ -10562,12 +10574,12 @@ html {
   }
   @media (min-width: 80em) {
     .generic-hero__inner .generic-hero__content {
-      padding-bottom: 4rem;
+      padding-bottom: 5rem;
     }
   }
   @media (min-width: 100em) {
     .generic-hero__inner .generic-hero__content {
-      padding-bottom: 4.5rem;
+      padding-bottom: 5rem;
     }
   }
   @media print {
@@ -10575,16 +10587,6 @@ html {
       margin-bottom: 1.25rem;
       padding-bottom: 0px;
       width: 100%;
-    }
-  }
-  @media (min-width: 80em) {
-    .generic-hero--with-card .generic-hero__inner .generic-hero__content {
-      padding-bottom: 17.875rem;
-    }
-  }
-  @media (min-width: 100em) {
-    .generic-hero--with-card .generic-hero__inner .generic-hero__content {
-      padding-bottom: 17.875rem;
     }
   }
   .EPiServerForms .generic-hero__inner .generic-hero__content .FormSubmitButton,
@@ -16980,7 +16982,7 @@ html {
 }
   @media (max-width: 414px){
     .header__logo img {
-      width: 13rem;
+      width: 12rem;
     }
     .header{
       top:9px
@@ -17307,6 +17309,13 @@ html {
       padding: 0.4375rem 0.75rem 0.375rem;
       position: absolute;
       top: 0.9375rem;
+    }
+  }
+  @media (min-width: 320px) and (max-width:374px) {
+    .EPiServerForms .sticky-navigation .FormSubmitButton,
+    .sticky-navigation .EPiServerForms .FormSubmitButton,
+    .sticky-navigation .btn {
+      font-size: 0.5rem;
     }
   }
   @media (max-width: 320px) {
@@ -17804,7 +17813,7 @@ html {
     text-transform: uppercase;
     transition: all 0.4s ease 0s;
     color: rgb(0, 0, 0);
-    font-family: Rubik, sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 500;
     border-bottom: 1px solid black;
     display: flex;
@@ -18940,7 +18949,7 @@ html {
   }
   @media (min-width:768px) and (max-width:1024px){
     .generic-hero__inner .generic-hero__content{
-      padding-bottom: 11.875rem;
+          
     }
     .s-curve-card__media{
       padding-top: 0;
