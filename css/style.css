@@ -10336,7 +10336,6 @@ html {
     .generic-content {
       margin-bottom: 8.125rem;
       margin-top: 0px;
-      padding-top: 6.25rem;
     }
   }
   .generic-content .container {
@@ -16965,7 +16964,7 @@ html {
   }
   @media (min-width: 90em) {
     .header__logo {
-      width: 19.5rem;
+      width: 18.5rem;
     }
   }
   .header__logo img {
