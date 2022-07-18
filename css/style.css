@@ -10571,14 +10571,30 @@ html {
     padding-bottom: 1.875rem;
     position: relative;
   }
+  @media (min-width: 412px) and (max-width:450px) {
+    .generic-hero__inner .generic-hero__content{
+      padding-bottom: 4.875rem;
+    }
+  }
+
+  @media (min-width: 376px) and (max-width:411px) {
+    .generic-hero__inner .generic-hero__content{
+      padding-bottom: 2.875rem;
+    }
+  }
+  @media (min-width: 414px) and (max-width:450px) {
+    .generic-hero__inner .generic-hero__content{
+      padding-bottom: 4.875rem;
+    }
+  }
   @media (min-width: 80em) {
     .generic-hero__inner .generic-hero__content {
-      padding-bottom: 5rem;
+      padding-bottom: 9rem;
     }
   }
   @media (min-width: 100em) {
     .generic-hero__inner .generic-hero__content {
-      padding-bottom: 5rem;
+      padding-bottom: 9rem;
     }
   }
   @media print {
@@ -18954,7 +18970,8 @@ html {
   }
   @media (min-width:768px) and (max-width:1024px){
     .generic-hero__inner .generic-hero__content{
-          
+      padding-bottom: 3.875rem;
+
     }
     .s-curve-card__media{
       padding-top: 0;
