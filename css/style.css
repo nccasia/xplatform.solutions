@@ -12916,6 +12916,12 @@ html {
       font-size: 21px;
     }
   }
+  @media (min-width: 320px) and (max-width:1024px) {
+    .noteworthy-content-carousel__slider .swiper-slide {
+      height: auto;
+    }
+
+  }
   .noteworthy-content-carousel__slider .generic-image-card {
     -webkit-box-flex: 1;
     flex-grow: 1;
@@ -17902,7 +17908,7 @@ html {
   #popup-modal {
     position: fixed;
     width: 50vw;
-    height: 75vh;
+    height: fit-content;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
