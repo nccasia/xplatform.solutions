@@ -12844,7 +12844,7 @@ html {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    height: auto;
+    height: 375px;
     width: 17.5rem;
   }
   @media (min-width: 64em) {
@@ -12915,6 +12915,12 @@ html {
     .generic-image-card__pill{
       font-size: 21px;
     }
+  }
+  @media (min-width: 320px) and (max-width:1024px) {
+    .noteworthy-content-carousel__slider .swiper-slide {
+      height: auto;
+    }
+
   }
   .noteworthy-content-carousel__slider .generic-image-card {
     -webkit-box-flex: 1;
@@ -17902,7 +17908,7 @@ html {
   #popup-modal {
     position: fixed;
     width: 50vw;
-    height: 75vh;
+    height: fit-content;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
