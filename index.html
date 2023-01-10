@@ -1046,11 +1046,11 @@
 
               <form method="post" id="contact-form" action="#" class="nk-form nk-form-ajax nk-form-style-1">
                 <div class="form-group">
-                  <input type="email" class="form-control required" name="email" placeholder="Email *">
+                  <input type="email" class="form-control required" id="email" name="email" placeholder="Email *">
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="form-group">
-                  <input type="text" class="form-control required" name="fullname" placeholder="Name *">
+                  <input type="text" class="form-control required" id="fullName" name="fullname" placeholder="Name *">
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="form-group">
@@ -1059,7 +1059,7 @@
                 </div>
                 <div class="nk-gap-1"></div>
                 <div class="form-group">
-                  <textarea class="form-control required" name="message" rows="5" placeholder="Message *"></textarea>
+                  <textarea class="form-control required" id="content" name="message" rows="5" placeholder="Message *"></textarea>
                   <input type="hidden" class="hiddenRecaptcha" name="hiddenRecaptcha" id="hiddenRecaptcha">
                 </div>
                 <div class="nk-gap-1"></div>
@@ -1076,6 +1076,8 @@
                     </div>
                   </div>
                 </div>
+                <span class="error" id="nameError"></span>
+                <span class="success" id="nameSuccess"></span>
               </form>
             </div>
             <div class="col-lg-6 our-details">

@@ -157,6 +157,19 @@ html {
     -webkit-box-direction: normal;
     flex-direction: column;
   }
+  .error {
+    color: red;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .success {
+    color: green;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
   .swiper-wrapper {
     position: relative;
     width: 100%;
