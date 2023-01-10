@@ -21,7 +21,6 @@ formEl.addEventListener("submit", (event) => {
     },
     body: JSON.stringify(data),
   })
-    .then((response) => response.json())
     .then((result) => {
       if (result.data.success) {
         printMess(
