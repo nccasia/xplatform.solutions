@@ -35,7 +35,12 @@
   <link href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/RadialMenu.css">
-</head>
+  <link
+  rel="stylesheet"
+  type="text/css"
+  href="./css/slick.css"
+/>
+
 
 <body>
   <div style="display: none">
@@ -602,7 +607,7 @@
         <div class="block noteworthycontentcarouselblock col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div data-anchor="INDUSTRIES" class="noteworthy-content-carousel" data-module="noteworthyContentCarousel"
             id="featuredContent">
-            <div class="container" id="industries">
+            <div class="noteworthy-industries">
               <h2 class="noteworthy-content-carousel__title">
                 Industries
               </h2>
@@ -939,25 +944,23 @@
                       <span class="noteworthy-content-carousel__slide-number">08</span>
                     </div>
                   </div>
-                </div>
-                <div class="noteworthy-content-carousel__controls">
-                  <div class="noteworthy-content-carousel__scrollbar">
-                    <div class="swiper-scrollbar-drag" style="
-                          transform: translate3d(0px, 0px, 0px);
-                          width: 587.795px;
-                        "></div>
-                  </div>
-                  <div class="noteworthy-content-carousel__actions" tabindex="0" aria-label="Carousel Navigation">
-                    <div class="noteworthy-content-carousel__prev swiper-button-disabled" role="button"
-                      aria-label="Previous">
-                      <svg viewBox="0 0 30 30">
-                        <use xlink:href="#arrow-left"></use>
-                      </svg>
+                  <div class="noteworthy-content-carousel__controls container">
+                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                      <span class="slider__label sr-only">
                     </div>
-                    <div class="noteworthy-content-carousel__next" role="button" aria-label="Next">
-                      <svg viewBox="0 0 30 30">
-                        <use xlink:href="#arrow-right"></use>
-                      </svg>
+                    <div class="noteworthy-content-carousel__actions" tabindex="0" aria-label="Carousel Navigation">
+                      <!-- swiper-button-disabled -->
+                      <div class="noteworthy-content-carousel__prev" role="button"
+                        aria-label="Previous">
+                        <svg viewBox="0 0 30 30" >
+                          <use xlink:href="#arrow-left"></use>
+                        </svg>
+                      </div>
+                      <div class="noteworthy-content-carousel__next" role="button" aria-label="Next">
+                        <svg viewBox="0 0 30 30">
+                          <use xlink:href="#arrow-right"></use>
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1250,7 +1253,49 @@
   <script src="./js/bootstrap.bundle.minf3c5.js"></script>
   <script src="./js/features/UnisysUpdateBrowserf3c5.js"></script>
   <script src="./js/main.bundle020f.js"></script>
-
+  <script
+    type="text/javascript"
+    src="./js/slick.js"
+  ></script>
+  <script>
+    $('.swiper-wrapper').slick({
+      centerMode: false,
+      infinite: false,   
+      variableWidth: true,
+      prevArrow: $('.noteworthy-content-carousel__prev'),
+      nextArrow: $('.noteworthy-content-carousel__next'),
+      speed: 300,
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1350,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: false,
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: false,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+          }
+        }
+      ]
+    });
+  </script>
 </body>
 
 </html>
