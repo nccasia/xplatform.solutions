@@ -65,19 +65,24 @@ function MenuCircle() {
 }
 const getX = document.getElementsByClassName("center");
 const html = `<circle id="midc" cx="0" cy="0" r="19"></circle> <text style="
-font-size: 7px;font-weight: 500;" x="-9.5" y="3" id="midT" fill="white">KOMU</text>`;
+font-size: 7px;font-weight: 500;" id="midT" fill="white" text-anchor="middle" dominant-baseline="middle">MEZON</text>`;
 const tag = document.createElement("text");
-const Text2 = document.createTextNode("KOMU");
+const Text2 = document.createTextNode("MEZON");
 getX[0].innerHTML = html;
+let firstClick = true;
 
 getX[0].onclick = function () {
+  if (firstClick) {
+    window.open("https://mezon.ai");
+    firstClick = false;
+  }
   document.getElementById("midc").classList.add("them");
   document.getElementById("midc").style.fill = `url("#myGradient")`;
   document.getElementById("midT").style.fill = "white";
 
-  if (document.getElementById("komu").classList.contains("active")) {
-    document.getElementById("komu").classList.remove("active");
-    document.getElementById("komu").classList.add("hidden");
+  if (document.getElementById("mezon").classList.contains("active")) {
+    document.getElementById("mezon").classList.remove("active");
+    document.getElementById("mezon").classList.add("hidden");
   }
   {
     const testt = document.querySelectorAll(".display-content");
@@ -92,7 +97,7 @@ getX[0].onclick = function () {
         item.classList.remove("active");
       }
     });
-    document.getElementById("komu").classList.add("active");
+    document.getElementById("mezon").classList.add("active");
   }
 };
 

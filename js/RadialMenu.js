@@ -223,7 +223,7 @@ RadialMenu.prototype.createMenu = function (classValue, levelItems, nested) {
     if (nested) {
         self.createCenter(svg, 'Close', '#return', 8);
     } else {
-        self.createCenter(svg, 'KOMU', '#KOMU', 7);
+        self.createCenter(svg, 'MEZON', '#MEZON', 7);
     }
 
 
@@ -477,7 +477,7 @@ RadialMenu.prototype.addIconSymbols = function () {
     svg.appendChild(returnSymbol);
 
     var closeSymbol = document.createElementNS('http://www.w3.org/2000/svg', 'symbol');
-    closeSymbol.setAttribute('id', 'KOMU');
+    closeSymbol.setAttribute('id', 'MEZON');
     closeSymbol.setAttribute('viewBox', '0 0 41.756 41.756');
 
     var closePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
